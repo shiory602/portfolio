@@ -1,16 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
   <link rel="shortcut icon" href="/img/favicon.ico">
-  <title>About - Shiori Suzuki</title>
-  <link rel="icon" href="favicon.ico">
+  <title>About - Shiori Suzuki -</title>
+  <!-- Required meta tags -------------------------------------------->
+  <meta charaset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Shiori's portfolio.">
+  <!-- CSS ----------------------------------------------------------->
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/reset.css">
+  <!-- Bootstrap CSS ------------------------------------------------->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+  <!-- fontawesome --------------------------------------------------->
+  <script src="https://kit.fontawesome.com/27c86a747a.js" crossorigin="anonymous"></script>
 </head>
 <body>
-  <header>
+  <!-- START: header --------------------------------------------->
+  <div id="header" name="pageTop">
+    <div class="logo-image">
+      <a href="index.html">
+        <img src="img/logo.png" alt="Shiori Logo">
+      </a>
+    </div>
+    <ul class="navbar">
+      <li class="navbar-item">
+        <a class="navbar-link" aria-current="page" href="index.html">Home</a>
+      </li>
+      <li class="navbar-item">
+        <a class="navbar-link" href="about.html">About</a>
+      </li>
+      <li class="navbar-item">
+        <a class="navbar-link" href="#">Resume</a>
+      </li>
+      <li class="navbar-item">
+        <a class="navbar-link" href="portfolio.html">Portfolio</a>
+      </li>
+      <li class="navbar-item">
+        <a class="navbar-link" href="contact.html">Contact</a>
+      </li>
+    </ul>
+    <div class="social-links">
+      <ul class="navbar">
+        <li class="navbar-item">
+          <a class="navbar-link" href="https://github.com/shiory602" target="_blank">
+            <i class="fab fa-github-alt"></i>
+          </a>
+        </li>
+        <li class="navbar-item">
+          <a class="navbar-link" href="https://www.linkedin.com/in/shiori-suzuki-a819aa188/" target="_blank">
+            <i class="fab fa-linkedin"></i>
+          </a>
+        </li>
+        <li class="navbar-item">
+          <a class="navbar-link" href="https://twitter.com/shiory602" target="_blank">
+            <i class="fab fa-twitter-square"></i>
+          </a>
+        </li>
+        <li class="navbar-item">
+          <a class="navbar-link" href="mailto:suzushioufo@gmail.com" target="_blank">
+            <i class="fas fa-envelope-square"></i>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <!-- END: header --------------------------------------------->
 
-Contact Me
-Want to get in touch or follow me? Feel free to connect with me on Instagram and Twitter. If you’d like to reach out with a collaboration or business proposal, you can email me at thomas@collegeinfogeek.com.
+
+  <main>
+		<div class="about-page">
+			<div class="block">
+				<div class="block-container">
+					<div class="text-block">
+            <div class="text-block-wrap">
+              <div class="text-block-title">
+                <span>Contact Me</span>
+              </div>
+              <div class="text-block-content">
+                <p class="text-align">Want to get in touch or follow me? Feel free to connect with me on Instagram and Twitter. If you’d like to reach out with a collaboration or business proposal, you can email me at thomas@collegeinfogeek.com.</p>
+              </div>
+            </div>
+            <img src="/sources/shiori14.jpg" alt="Main portrait">
+					</div>
+				</div>
+			</div>
+		</div>
+  </main>
+
 <footer>
   <ul>
     <li>
@@ -19,7 +97,12 @@ Want to get in touch or follow me? Feel free to connect with me on Instagram and
       </a>
     </li>
   </ul>
-<p>(c) Shiori Suzuki</p>
+  <div id="footer-container">  
+    <a href="#pageTop">
+      <i class="fas fa-arrow-up"></i>
+    </a>
+    <p>© Shiori Suzuki 2021</p>
+  </div>
 </footer>
 </body>
 </html>
