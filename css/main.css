@@ -1,97 +1,62 @@
+* {
+  box-sizing: border-box;
+}
+
 body {
-  color: #333;
-  font-family: Verdana, sans-serif;
-  margin: 0;
-}
-
-header {
-  background-color: #efefef;
-  padding-top: 32px;
-  padding-bottom: 32px;
-}
-
-.container {
-  /* background-color: pink; */
-  width: 400px;
-  margin-left: auto;
-  margin-right: auto;
-  display: flex;
-  align-items: center;
-}
-
-/* .icon {
-background-color: skyblue;
-} */
-.icon img {
-  /* border-radius: 20px; */
-  border-radius: 90px;
-  border-width: 4px;
-  border-style: solid;
-  border-color: white;
-  margin-right: 20px;
-}
-
-.info {
-  /* background-color: tomato; */
+  width: 100%;
+  max-width: 100%;
   margin: 0 auto;
-}
-
-.info h1 {
-  font-weight: normal;
-  font-size: 24px;
-  margin: 0;
-}
-
-.info p {
-  margin: 0;
-  margin-bottom: 16px;
-}
-
-.info ul {
-  margin: 0;
   padding: 0;
-  list-style-type: none;
-  display: flex;
+  font-family: "Helvetica Neue",Helvetica, Arial,sans-serif;
+  font-weight: normal;
+  background-color: #ffffff;
+  color: #6b6764;
+  line-height: 1.5;
 }
 
-.info li {
+a {
+  text-decoration: none;
+  cursor: pointer;
+}
+
+#header {
+  width: 100%;
+  transition: background-color .8s;
+  transition-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+
+.logo-image {
   display: inline-block;
-  margin-right: 15px;
-  font-size: smaller;
+  position: relative;
+  transition: color .8s;
+  transition-timing-function: cubicbezier(0.25, 0.46, 0.45, 0.94);
 }
 
-.info span {
-  margin-left: 2px;
+.logo-image a img {
+  display: block;
+  width: 100%;
+  transition: opacity .8s;
 }
 
-.works {
-  width: 400px;
-  margin-left: auto;
-  margin-right: auto;
+.navbar {
+  display: inline;
 }
 
-.works > h1 {
-  font-weight: normal;
-  font-size: 24px;
-  text-align: center;
-  margin: 60px auto;
+.navbar .navbar-item {
+  list-style-type: none;
 }
 
-.works > section {
-  margin-bottom: 60px;
+.social-links {
+  display: inline-block;
 }
 
-.works > section > h1 {
-  font-weight: normal;
+.divider--line {
+  display: inline-block;
+  height: 1px;
+  background-color: #d2d1d0;
 }
 
-.works p {
-  line-height: 1.8;
-}
-
-footer p {
-  text-align: center;
-  font-size: 14px;
-  margin-bottom: 60px;
-  color: gray;
+#footer-container {
+  width: 100%;
+  margin: auto;
 }
