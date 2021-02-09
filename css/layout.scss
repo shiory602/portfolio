@@ -1,1 +1,45 @@
 // header, content
+@import 'components';
+
+a {
+  text-decoration: none;
+	cursor: pointer;
+	color: $textColor2;
+}
+
+
+.header-container {
+  display: flex;
+  width: 100%;
+  transition: background-color .8s;
+  transition-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94)
+}
+
+.logo-image {
+  display: inline-block;
+  position: relative;
+  transition: color .8s;
+  transition-timing-function: cubicbezier(0.25, 0.46, 0.45, 0.94);
+
+  a {
+    img {
+      display: block;
+      width: 100%;
+      transition: opacity .8s;
+    }
+  }
+}
+
+.navbar {
+  display: block;
+
+  .navbar-item {
+		width: 30vw;
+		list-style-type: none;
+		display: inline-block;
+  }
+}
+
+.social-links {
+  display: inline-block;
+}
