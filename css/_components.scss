@@ -20,10 +20,18 @@ $textColor3: #000000;
 
 // devide line -----------------------------------------------------
 
-.divider--line {
-  display: inline-block;
-  height: 1px;
-  background-color: $mainColor3;
+.divider {
+	display: inline-block;
+	padding: 2.5rem 0;
+	text-align: center;
+	width: 100%;
+
+	.divider--line {
+		height: 2px;
+		width: 100%;
+		background-color: $mainColor3;
+		color: #6b6764;
+	}
 }
 
 
@@ -36,13 +44,13 @@ $textColor3: #000000;
 			img{
 				position: relative;
 				&.slide1{
-					top:-200px;
+					top:-300px;
 				}
 				&.slide2{
 					top:-200px;
 				}
 				&.slide3{
-					top:-200px
+					top:-300px
 				}
 			}
 		}
@@ -53,15 +61,17 @@ $textColor3: #000000;
 // index.html -----------------------------------------------------------------
 // ----------------------------------------------------------------------------
 
+// button ------------------------------------------------------
 .block {
 	.block-container {
 		.action-button {
 			display: inline-block;
       a {
         @include linkEffect;
-        border: 1px solid $bgColor2;
-        padding: 8px 36px;
-        background-color: $mainColor1;
+				padding: 1.25rem 3.125rem;
+        background-color: $bgColor2;
+        border: 1px solid $bgColor1;
+				color: $textColor1;
 				span {
 					display: inline-block;
 					width: 200px;

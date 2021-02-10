@@ -27,7 +27,8 @@
 }
 
 .navbar-social, .navbar-menu {
-  line-height: 100%;
+  // line-height: 100%;
+  margin-top: 2rem;
 }
 .navbar {
   line-height: 100%;
@@ -43,3 +44,16 @@
 
 // block-container -----------------------------------------------------------------
 // ---------------------------------------------------------------------------------
+.block {
+    padding-left: 3rem;
+    padding-right: 3rem;
+    max-width: 100%;
+    height: 42vh;
+	.block-container {
+    height: 2vh;
+    .text-content {
+      padding: 2.5rem 0;
+      margin: 0 auto;
+    }
+  }
+}

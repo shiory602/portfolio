@@ -1,7 +1,15 @@
-.divider--line {
+.divider {
   display: inline-block;
-  height: 1px;
+  padding: 2.5rem 0;
+  text-align: center;
+  width: 100%;
+}
+
+.divider .divider--line {
+  height: 2px;
+  width: 100%;
   background-color: #d2d1d0;
+  color: #6b6764;
 }
 
 #carouselExampleIndicators .carousel-inner {
@@ -13,7 +21,7 @@
 }
 
 #carouselExampleIndicators .carousel-inner .carousel-item img.slide1 {
-  top: -200px;
+  top: -300px;
 }
 
 #carouselExampleIndicators .carousel-inner .carousel-item img.slide2 {
@@ -21,7 +29,7 @@
 }
 
 #carouselExampleIndicators .carousel-inner .carousel-item img.slide3 {
-  top: -200px;
+  top: -300px;
 }
 
 .block .block-container .action-button {
@@ -32,9 +40,10 @@
   text-decoration: none;
   cursor: pointer;
   color: #6b6764;
-  border: 1px solid #afafaf;
-  padding: 8px 36px;
-  background-color: #ffffff;
+  padding: 1.25rem 3.125rem;
+  background-color: #afafaf;
+  border: 1px solid #ffffcc;
+  color: #ffffff;
 }
 
 .block .block-container .action-button a span {
