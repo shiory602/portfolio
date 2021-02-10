@@ -5,8 +5,6 @@
   box-sizing: border-box;
 }
 
-// main body
-
 body {
   width: 100%;
   max-width: 100%;
@@ -20,29 +18,8 @@ body {
   line-height: 1.5;
 }
 
-.block {
-
-	.block-container {
-		.action-button {
-			display: inline-block;
-			border: 1px solid $mainColor2;
-			padding: 8px 36px;
-			background-color: #000;
-		}
-		&:hover {
-			background-color: $bgColor2;
-		}
-	}
-}
-
-.divider--line {
-  display: inline-block;
-  height: 1px;
-  background-color: $mainColor3;
-}
 
 #footer-container {
-  // text-align: center;
   width: 100%;
   margin: auto;
 }

@@ -1,0 +1,77 @@
+// color ----------------------------------------------
+$mainColor1: #ffffff;
+$mainColor2: #f9f9f9;
+$mainColor3: #d2d1d0;
+
+$bgColor1: #ffffcc;
+$bgColor2: #afafaf;
+
+$textColor1: #ffffff;
+$textColor2: #6b6764;
+$textColor3: #000000;
+
+
+@mixin linkEffect {
+	text-decoration: none;
+	cursor: pointer;
+	color: $textColor2;
+}
+
+
+// devide line -----------------------------------------------------
+
+.divider--line {
+  display: inline-block;
+  height: 1px;
+  background-color: $mainColor3;
+}
+
+
+
+// carousel -----------------------------------------------------
+#carouselExampleIndicators {
+	.carousel-inner {
+		height: 500px;
+		.carousel-item {
+			img{
+				position: relative;
+				&.slide1{
+					top:-200px;
+				}
+				&.slide2{
+					top:-200px;
+				}
+				&.slide3{
+					top:-200px
+				}
+			}
+		}
+	}
+}
+
+
+// index.html -----------------------------------------------------------------
+// ----------------------------------------------------------------------------
+
+.block {
+	.block-container {
+		.action-button {
+			display: inline-block;
+      a {
+        @include linkEffect;
+        border: 1px solid $bgColor2;
+        padding: 8px 36px;
+        background-color: $mainColor1;
+				span {
+					display: inline-block;
+					width: 200px;
+					height: 200px;
+				}
+      }
+		}
+	}
+}
+.travelPhoto1 {
+	width: 100%;
+	background-image: url('/sources/shiori.jpg');
+}
