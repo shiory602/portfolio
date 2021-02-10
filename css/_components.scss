@@ -3,7 +3,7 @@ $mainColor1: #ffffff;
 $mainColor2: #f9f9f9;
 $mainColor3: #d2d1d0;
 
-$bgColor1: #ffffcc;
+$bgColor1: #f8f8f7;
 $bgColor2: #afafaf;
 
 $textColor1: #ffffff;
@@ -15,6 +15,9 @@ $textColor3: #000000;
 	text-decoration: none;
 	cursor: pointer;
 	color: $textColor2;
+	&:hover {
+		color: $textColor2;
+	}
 }
 
 
@@ -22,18 +25,21 @@ $textColor3: #000000;
 
 .divider {
 	display: inline-block;
-	padding: 2.5rem 0;
+	padding-bottom: 2.5rem;
 	text-align: center;
 	width: 100%;
 
 	.divider--line {
-		height: 2px;
-		width: 100%;
+		margin: 0 auto;
+		height: 1px;
+		width: 80%;
 		background-color: $mainColor3;
-		color: #6b6764;
 	}
 }
 
+
+// index.html -----------------------------------------------------------------
+// ----------------------------------------------------------------------------
 
 
 // carousel -----------------------------------------------------
@@ -44,13 +50,14 @@ $textColor3: #000000;
 			img{
 				position: relative;
 				&.slide1{
-					top:-300px;
+					top: -300px;
 				}
 				&.slide2{
-					top:-200px;
+					top: -280px;
 				}
 				&.slide3{
-					top:-300px
+					width: 100%;
+					top: -180px;
 				}
 			}
 		}
@@ -58,15 +65,13 @@ $textColor3: #000000;
 }
 
 
-// index.html -----------------------------------------------------------------
-// ----------------------------------------------------------------------------
 
 // button ------------------------------------------------------
 .block {
 	.block-container {
 		.action-button {
 			display: inline-block;
-      a {
+      .linkToAbout {
         @include linkEffect;
 				padding: 1.25rem 3.125rem;
         background-color: $bgColor2;
@@ -81,7 +86,16 @@ $textColor3: #000000;
 		}
 	}
 }
-.travelPhoto1 {
-	width: 100%;
-	background-image: url('/sources/shiori.jpg');
+
+.form-button {
+	float: left;
+	background-color: $bgColor1;
+  color: $textColor2!important;
+	min-width: 8.4375rem;
+	padding: .75rem 1.25rem;
+	transition: opacity .8s;
+	transition-timing-function: cubic-bezier(0.25,0.46,0.45,0.94);
+	min-height: 2.34375rem;
+	cursor: pointer;
 }
+
