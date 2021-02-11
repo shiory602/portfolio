@@ -30,9 +30,9 @@ body {
  /* プロジェクトによって変動 */
  min-width: 1000px;
  color: #6b6764;
- line-height: 1.6;
+ line-height: 1.5;
  font-weight: 400;
- font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+ font-family: 'Arapey', serif;
 
  width: 100%;
  /* font-smoothing: antialiased; */

@@ -1,3 +1,13 @@
+.emailLink {
+  text-decoration: none;
+  cursor: pointer;
+  color: #6b6764;
+}
+
+.emailLink:hover {
+  color: #6b6764;
+}
+
 .divider {
   display: inline-block;
   padding-bottom: 2.5rem;

@@ -9,13 +9,11 @@ body {
   width: 100%;
   max-width: 100%;
   margin: 0 auto;
-  text-align: center;
   padding: 0;
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-weight: normal;
+  text-align: center;
   background-color: $mainColor1;
   color: $textColor2;
-  line-height: 1.5;
+  font-family: 'Arapey', serif;
 }
 
 // index.html -------- big menu -----------------------------
@@ -100,23 +98,18 @@ body {
 .contact {
   width: 80vw;
   display: inline-block;
-  margin: 3rem auto;
+  margin: 2rem auto;
   height: 70vh;
   .contact-image {
+    margin-top: 2rem;
+    padding-left: 5rem;
     float: left;
     display: block;
-    width: 45%;
     height: 31rem;
-    background-image: url('/sources/contact.jpg');
-    background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
   }
   .contact-wrap {
-    float: right;
-    width: 45%;
     height: 31rem;
-    margin-left: 3rem;
+    padding-right: 5rem;
     color: $textColor2;
     word-spacing: 0em;
     line-height: 1.4em;
@@ -125,7 +118,8 @@ body {
     .contact-title {
       font-size: 2.5rem;
       letter-spacing: 0.2em;
-      margin-bottom: 2rem;
+      margin-bottom: 3rem;
+      margin-top: 3rem;
     }
     .contact-subtitle {
     font-size: 0.9375rem;
@@ -133,6 +127,7 @@ body {
     }
     .contact-form {
       margin-top: 3rem;
+      padding: 0 2rem;
       width: 100%;
       textarea {
         resize: none;
@@ -146,6 +141,7 @@ body {
       }
       .form-design {
         height: 100%;
+        width: 90%;
         padding: 1.25rem 1.5625rem;
         margin-bottom: 0;
         border: 0;
@@ -153,6 +149,7 @@ body {
         border-bottom: 1px solid $mainColor3 !important;
         margin-bottom: .9375rem !important;
         background-color: transparent;
+        font-size: 0.6rem;
       }
     }
   }
@@ -185,15 +182,28 @@ body {
     text-transform: none;
     font-weight: normal;
     .text-block-title {
-      font-size: 2.5rem;
-      letter-spacing: 0.2em;
-      margin-bottom: 3rem;
+      @include textTitle;
     }
     .text-block-content {
     font-size: 0.9375rem;
     letter-spacing: 0em;
-    }
   }
+}
 }
 
 
+// Portfolio page ----------------------------
+.portfolio-title {
+  @include textTitle;
+}
+.portfolio-works {
+  width: 100%;
+  margin: 3rem auto;
+  .portfolio-work {
+    width: 80%;
+    margin-bottom: 3rem;
+.resize {
+  width: 100%;
+}
+  }
+}
