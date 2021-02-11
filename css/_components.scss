@@ -56,6 +56,10 @@ $textColor3: #000000;
 
 // START: carousel ----------------------------
 // --------------------------------------------
+.slideshow {
+  height: 100vh;
+}
+
 #carouselExampleIndicators {
 	.carousel-inner {
 		height: 500px;
@@ -63,14 +67,14 @@ $textColor3: #000000;
 			img{
 				position: relative;
 				&.slide1{
-					top: -300px;
+					top: -100px;
 				}
 				&.slide2{
-					top: -280px;
+					top: -200px;
 				}
 				&.slide3{
 					width: 100%;
-					top: -180px;
+					// top: -180px;
 				}
 			}
 		}

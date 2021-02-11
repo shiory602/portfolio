@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Arapey&display=swap");
 .emailLink {
   text-decoration: none;
   cursor: pointer;
@@ -22,6 +23,10 @@
   background-color: #d2d1d0;
 }
 
+.slideshow {
+  height: 100vh;
+}
+
 #carouselExampleIndicators .carousel-inner {
   height: 500px;
 }
@@ -31,16 +36,15 @@
 }
 
 #carouselExampleIndicators .carousel-inner .carousel-item img.slide1 {
-  top: -300px;
+  top: -100px;
 }
 
 #carouselExampleIndicators .carousel-inner .carousel-item img.slide2 {
-  top: -280px;
+  top: -200px;
 }
 
 #carouselExampleIndicators .carousel-inner .carousel-item img.slide3 {
   width: 100%;
-  top: -180px;
 }
 
 .block .block-container .action-button {
@@ -103,6 +107,10 @@
   background-color: #d2d1d0;
 }
 
+.slideshow {
+  height: 100vh;
+}
+
 #carouselExampleIndicators .carousel-inner {
   height: 500px;
 }
@@ -112,16 +120,15 @@
 }
 
 #carouselExampleIndicators .carousel-inner .carousel-item img.slide1 {
-  top: -300px;
+  top: -100px;
 }
 
 #carouselExampleIndicators .carousel-inner .carousel-item img.slide2 {
-  top: -280px;
+  top: -200px;
 }
 
 #carouselExampleIndicators .carousel-inner .carousel-item img.slide3 {
   width: 100%;
-  top: -180px;
 }
 
 .block .block-container .action-button {
@@ -201,6 +208,7 @@
   .navbar-social,
   .navbar-menu {
     margin-top: 2rem;
+    padding: 0 5rem;
   }
   .navbar {
     line-height: 100%;
@@ -269,6 +277,12 @@ body {
   font-family: 'Arapey', serif;
 }
 
+#page-wrap {
+  width: 100%;
+  margin: 10vh auto;
+  padding: 0 12vw;
+}
+
 .links-in-column3 a {
   text-decoration: none;
   cursor: pointer;
@@ -282,12 +296,12 @@ body {
   color: #6b6764;
 }
 
-.links-in-column3 a span {
-  display: block;
+.links-in-column3 a:last-child {
+  border-right: 0;
 }
 
-.links-in-column3 a span:last-child {
-  border-right: 0;
+.links-in-column3 a span {
+  display: block;
 }
 
 .links-in-column3 a span .link-title {
@@ -299,7 +313,7 @@ body {
 }
 
 .links-photo {
-  width: 100vw;
+  width: 100%;
   height: 10vh;
   display: block;
   margin: 3rem auto;
@@ -318,102 +332,25 @@ body {
   color: #6b6764;
 }
 
-.links-photo .travelPhoto1 {
+.links-photo .photo-set {
   display: block;
   width: 100%;
-  height: 50vh;
-  background-image: url("/sources/turkey1.jpg");
+  height: 48vh;
   background-size: cover;
   background-position: center center;
   background-repeat: no-repeat;
 }
 
-.links-photo .travelPhoto2 {
-  display: block;
-  height: 50vh;
-  width: 100%;
-  background-image: url("/sources/turkey1.jpg");
-  background-size: cover;
-  background-position: center center;
-  background-repeat: no-repeat;
+.travelPhoto1 {
+  background-image: url("/sources/ps1.jpg");
 }
 
-.links-photo .travelPhoto3 {
-  display: block;
-  height: 50vh;
-  width: 100%;
-  background-image: url("/sources/turkey1.jpg");
-  background-size: cover;
-  background-position: center center;
-  background-repeat: no-repeat;
+.travelPhoto2 {
+  background-image: url("/sources/ps2.jpg");
 }
 
-.contact {
-  width: 80vw;
-  display: inline-block;
-  margin: 2rem auto;
-  height: 70vh;
-}
-
-.contact .contact-image {
-  margin-top: 2rem;
-  padding-left: 5rem;
-  float: left;
-  display: block;
-  height: 31rem;
-}
-
-.contact .contact-wrap {
-  height: 31rem;
-  padding-right: 5rem;
-  color: #6b6764;
-  word-spacing: 0em;
-  line-height: 1.4em;
-  text-transform: none;
-  font-weight: normal;
-}
-
-.contact .contact-wrap .contact-title {
-  font-size: 2.5rem;
-  letter-spacing: 0.2em;
-  margin-bottom: 3rem;
-  margin-top: 3rem;
-}
-
-.contact .contact-wrap .contact-subtitle {
-  font-size: 0.9375rem;
-  letter-spacing: 0em;
-}
-
-.contact .contact-wrap .contact-form {
-  margin-top: 3rem;
-  padding: 0 2rem;
-  width: 100%;
-}
-
-.contact .contact-wrap .contact-form textarea {
-  resize: none;
-}
-
-.contact .contact-wrap .contact-form:focus {
-  outline: none;
-}
-
-.contact .contact-wrap .contact-form .form-field {
-  display: block;
-}
-
-.contact .contact-wrap .contact-form .form-design {
-  height: 100%;
-  width: 90%;
-  padding: 1.25rem 1.5625rem;
-  margin-bottom: 0;
-  border: 0;
-  color: #d2d1d0;
-  border-bottom: 1px solid #d2d1d0 !important;
-  margin-bottom: .9375rem !important;
-  background-color: transparent;
-  font-size: 0.6rem;
+.travelPhoto3 {
+  background-image: url("/sources/ps3.jpg");
 }
 
 .text-block {
@@ -463,6 +400,7 @@ body {
   margin-bottom: 3rem;
   margin-top: 3rem;
   color: #6b6764;
+  margin-top: 7rem;
 }
 
 .portfolio-works {
@@ -472,11 +410,79 @@ body {
 
 .portfolio-works .portfolio-work {
   width: 80%;
-  margin-bottom: 3rem;
+  margin: 3rem auto;
 }
 
 .portfolio-works .portfolio-work .resize {
   width: 100%;
+}
+
+.contact {
+  width: 80vw;
+  display: inline-block;
+  margin: 0 auto;
+  height: 70vh;
+}
+
+.contact .contact-image {
+  margin-top: 2rem;
+  padding-left: 5rem;
+  float: left;
+  display: block;
+  height: 31rem;
+}
+
+.contact .contact-wrap {
+  height: 31rem;
+  padding-right: 5rem;
+  color: #6b6764;
+  word-spacing: 0em;
+  line-height: 1.4em;
+  text-transform: none;
+  font-weight: normal;
+}
+
+.contact .contact-wrap .contact-title {
+  font-size: 2.5rem;
+  letter-spacing: 0.2em;
+  margin-bottom: 1.5rem;
+  margin-top: 2.5rem;
+}
+
+.contact .contact-wrap .contact-subtitle {
+  font-size: 0.9375rem;
+  letter-spacing: 0.2em;
+}
+
+.contact .contact-wrap .contact-form {
+  margin-top: 3rem;
+  padding: 0 2rem;
+  width: 100%;
+}
+
+.contact .contact-wrap .contact-form textarea {
+  resize: none;
+}
+
+.contact .contact-wrap .contact-form:focus {
+  outline: none;
+}
+
+.contact .contact-wrap .contact-form .form-field {
+  display: block;
+}
+
+.contact .contact-wrap .contact-form .form-design {
+  height: 100%;
+  width: 90%;
+  padding: 1.25rem 1.5625rem;
+  margin-bottom: 0;
+  border: 0;
+  color: #d2d1d0;
+  border-bottom: 1px solid #d2d1d0 !important;
+  margin-bottom: .9375rem !important;
+  background-color: transparent;
+  font-size: 0.6rem;
 }
 
 .emailLink {
@@ -503,6 +509,10 @@ body {
   background-color: #d2d1d0;
 }
 
+.slideshow {
+  height: 100vh;
+}
+
 #carouselExampleIndicators .carousel-inner {
   height: 500px;
 }
@@ -512,16 +522,15 @@ body {
 }
 
 #carouselExampleIndicators .carousel-inner .carousel-item img.slide1 {
-  top: -300px;
+  top: -100px;
 }
 
 #carouselExampleIndicators .carousel-inner .carousel-item img.slide2 {
-  top: -280px;
+  top: -200px;
 }
 
 #carouselExampleIndicators .carousel-inner .carousel-item img.slide3 {
   width: 100%;
-  top: -180px;
 }
 
 .block .block-container .action-button {
@@ -601,6 +610,7 @@ body {
   .navbar-social,
   .navbar-menu {
     margin-top: 2rem;
+    padding: 0 5rem;
   }
   .navbar {
     line-height: 100%;
@@ -678,6 +688,10 @@ body {
   background-color: #d2d1d0;
 }
 
+.slideshow {
+  height: 100vh;
+}
+
 #carouselExampleIndicators .carousel-inner {
   height: 500px;
 }
@@ -687,16 +701,15 @@ body {
 }
 
 #carouselExampleIndicators .carousel-inner .carousel-item img.slide1 {
-  top: -300px;
+  top: -100px;
 }
 
 #carouselExampleIndicators .carousel-inner .carousel-item img.slide2 {
-  top: -280px;
+  top: -200px;
 }
 
 #carouselExampleIndicators .carousel-inner .carousel-item img.slide3 {
   width: 100%;
-  top: -180px;
 }
 
 .block .block-container .action-button {

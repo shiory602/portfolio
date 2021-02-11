@@ -22,6 +22,10 @@
   background-color: #d2d1d0;
 }
 
+.slideshow {
+  height: 100vh;
+}
+
 #carouselExampleIndicators .carousel-inner {
   height: 500px;
 }
@@ -31,16 +35,15 @@
 }
 
 #carouselExampleIndicators .carousel-inner .carousel-item img.slide1 {
-  top: -300px;
+  top: -100px;
 }
 
 #carouselExampleIndicators .carousel-inner .carousel-item img.slide2 {
-  top: -280px;
+  top: -200px;
 }
 
 #carouselExampleIndicators .carousel-inner .carousel-item img.slide3 {
   width: 100%;
-  top: -180px;
 }
 
 .block .block-container .action-button {

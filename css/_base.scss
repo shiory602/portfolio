@@ -1,6 +1,7 @@
 @import 'components';
 @import 'layout';
 
+
 * {
   box-sizing: border-box;
 }
@@ -16,18 +17,28 @@ body {
   font-family: 'Arapey', serif;
 }
 
-// index.html -------- big menu -----------------------------
+
+// index.html -------------------------------------------------
+#page-wrap {
+  width: 100%;
+  margin: 10vh auto;
+  padding: 0 12vw;
+}
+
+
+// START: text menu devided --------------------
+// --------------------------------------------
 .links-in-column3 {
   a {
     @include linkEffect;
     display: inline-block;
     width: calc(80% / 3);
     border-right: 1px solid $mainColor3;
+    &:last-child {
+      border-right: 0;
+    }
     span {
       display: block;
-      &:last-child {
-        border-right: 0;
-      }
       .link-title {
         font-weight: bold;
       }
@@ -37,123 +48,45 @@ body {
     }
   }
 }
+// --------------------------------------------
+// END: text menu devided ---------------------
 
-// devide to three function -------------------------------
-// @mixin devideThree($per, $name) {
-//   display: inline-block;
-//   width: calc($per / 3);
-//   $name {
-//     display: block;
-//   }
-// }
-
-// links-photo ------------------------------------------------------
+// START: links-photo ---------------------
+// --------------------------------------------
 .links-photo {
-  width: 100vw;
+  width: 100%;
   height: 10vh;
   display: block;
   margin: 3rem auto;
-  // margin-left: 3.5rem;
   .link-photo a {
     @include linkEffect;
     width: calc(80% / 3);
     float: left;
     margin: 0 2rem;
   }
-  .travelPhoto1 {
+  .photo-set {
     display: block;
     width: 100%;
-    height: 50vh;
-    background-image: url('/sources/turkey1.jpg');
+    height: 48vh;
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
+  }
+  }
+
+  .travelPhoto1 {
+    background-image: url('/sources/ps1.jpg');
   }
   .travelPhoto2 {
-    display: block;
-    height: 50vh;
-    width: 100%;
-    background-image: url('/sources/turkey1.jpg');
-    background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
+    background-image: url('/sources/ps2.jpg');
   }
   .travelPhoto3 {
-    display: block;
-    height: 50vh;
-    width: 100%;
-    background-image: url('/sources/turkey1.jpg');
-    background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
+    background-image: url('/sources/ps3.jpg');
   }
-}
+// --------------------------------------------
+// END: links-photo ---------------------------
 
 
-
-
-
-// contact form ----------------------------
-
-.contact {
-  width: 80vw;
-  display: inline-block;
-  margin: 2rem auto;
-  height: 70vh;
-  .contact-image {
-    margin-top: 2rem;
-    padding-left: 5rem;
-    float: left;
-    display: block;
-    height: 31rem;
-  }
-  .contact-wrap {
-    height: 31rem;
-    padding-right: 5rem;
-    color: $textColor2;
-    word-spacing: 0em;
-    line-height: 1.4em;
-    text-transform: none;
-    font-weight: normal;
-    .contact-title {
-      font-size: 2.5rem;
-      letter-spacing: 0.2em;
-      margin-bottom: 3rem;
-      margin-top: 3rem;
-    }
-    .contact-subtitle {
-    font-size: 0.9375rem;
-    letter-spacing: 0em;
-    }
-    .contact-form {
-      margin-top: 3rem;
-      padding: 0 2rem;
-      width: 100%;
-      textarea {
-        resize: none;
-      }
-      &:focus {
-        outline: none;
-      }
-
-      .form-field {
-        display: block;
-      }
-      .form-design {
-        height: 100%;
-        width: 90%;
-        padding: 1.25rem 1.5625rem;
-        margin-bottom: 0;
-        border: 0;
-        color: $mainColor3;
-        border-bottom: 1px solid $mainColor3 !important;
-        margin-bottom: .9375rem !important;
-        background-color: transparent;
-        font-size: 0.6rem;
-      }
-    }
-  }
-}
 
 
 // About page ----------------------------
@@ -195,15 +128,81 @@ body {
 // Portfolio page ----------------------------
 .portfolio-title {
   @include textTitle;
+  margin-top: 7rem;
 }
 .portfolio-works {
   width: 100%;
   margin: 3rem auto;
   .portfolio-work {
     width: 80%;
-    margin-bottom: 3rem;
+    margin: 3rem auto;
 .resize {
   width: 100%;
 }
   }
 }
+
+
+// contact form ----------------------------
+
+.contact {
+  width: 80vw;
+  display: inline-block;
+  margin: 0 auto;
+  height: 70vh;
+  .contact-image {
+    margin-top: 2rem;
+    padding-left: 5rem;
+    float: left;
+    display: block;
+    height: 31rem;
+  }
+  .contact-wrap {
+    height: 31rem;
+    padding-right: 5rem;
+    color: $textColor2;
+    word-spacing: 0em;
+    line-height: 1.4em;
+    text-transform: none;
+    font-weight: normal;
+    .contact-title {
+      font-size: 2.5rem;
+      letter-spacing: 0.2em;
+      margin-bottom: 1.5rem;
+      margin-top: 2.5rem;
+    }
+    .contact-subtitle {
+    font-size: 0.9375rem;
+    letter-spacing: 0.2em;
+    }
+    .contact-form {
+      margin-top: 3rem;
+      padding: 0 2rem;
+      width: 100%;
+      textarea {
+        resize: none;
+      }
+      &:focus {
+        outline: none;
+      }
+
+      .form-field {
+        display: block;
+      }
+      .form-design {
+        height: 100%;
+        width: 90%;
+        padding: 1.25rem 1.5625rem;
+        margin-bottom: 0;
+        border: 0;
+        color: $mainColor3;
+        border-bottom: 1px solid $mainColor3 !important;
+        margin-bottom: .9375rem !important;
+        background-color: transparent;
+        font-size: 0.6rem;
+      }
+    }
+  }
+}
+
+
