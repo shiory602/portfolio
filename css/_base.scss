@@ -58,6 +58,9 @@ body {
   height: 10vh;
   display: block;
   margin: 3rem auto;
+
+  margin-left: 2.8rem;
+
   .link-photo a {
     @include linkEffect;
     width: calc(80% / 3);
@@ -126,13 +129,21 @@ body {
 
 
 // Portfolio page ----------------------------
+#portfolio-page {
+  width: 100%;
+  margin-bottom: 5rem;
+}
+
 .portfolio-title {
   @include textTitle;
-  margin-top: 7rem;
+  margin-top: 5rem;
 }
 .portfolio-works {
   width: 100%;
-  margin: 3rem auto;
+  margin: 0 auto;
+  .row {
+    margin-bottom: 2.5rem;
+  }
   .portfolio-work {
     width: 80%;
     margin: 3rem auto;
