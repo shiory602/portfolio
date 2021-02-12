@@ -34,8 +34,7 @@ $textColor3: #000000;
 }
 
 
-// devide line -----------------------------------------------------
-
+// START: devide line ----------------------------------------------
 .divider {
   display: inline-block;
   padding-bottom: 2.5rem;
@@ -49,12 +48,14 @@ $textColor3: #000000;
     background-color: $mainColor3;
   }
 }
+// END: devide line ----------------------------------------------
 
 
 // START: links-photo ---------------------
 // --------------------------------------------
 .photo-size {
-  margin-bottom: 10rem;
+  margin-top: 10rem;
+  margin-bottom: 5rem;
 
   a {
     @include linkEffect;
@@ -127,7 +128,7 @@ $textColor3: #000000;
         padding: 1.25rem 3.125rem;
         background-color: $bgColor2;
         border: 1px solid $bgColor1;
-        color: $textColor1;
+        color: $textColor1!important;
 
         span {
           display: inline-block;

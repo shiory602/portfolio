@@ -23,7 +23,8 @@
 }
 
 .photo-size {
-  margin-bottom: 10rem;
+  margin-top: 10rem;
+  margin-bottom: 5rem;
 }
 
 .photo-size a {
@@ -78,7 +79,7 @@
   padding: 1.25rem 3.125rem;
   background-color: #afafaf;
   border: 1px solid #f8f8f7;
-  color: #ffffff;
+  color: #ffffff !important;
 }
 
 .block .block-container .action-button .linkToAbout:hover {

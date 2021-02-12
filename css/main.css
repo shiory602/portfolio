@@ -24,7 +24,8 @@
 }
 
 .photo-size {
-  margin-bottom: 10rem;
+  margin-top: 10rem;
+  margin-bottom: 5rem;
 }
 
 .photo-size a {
@@ -79,7 +80,7 @@
   padding: 1.25rem 3.125rem;
   background-color: #afafaf;
   border: 1px solid #f8f8f7;
-  color: #ffffff;
+  color: #ffffff !important;
 }
 
 .block .block-container .action-button .linkToAbout:hover {
@@ -129,7 +130,8 @@
 }
 
 .photo-size {
-  margin-bottom: 10rem;
+  margin-top: 10rem;
+  margin-bottom: 5rem;
 }
 
 .photo-size a {
@@ -184,7 +186,7 @@
   padding: 1.25rem 3.125rem;
   background-color: #afafaf;
   border: 1px solid #f8f8f7;
-  color: #ffffff;
+  color: #ffffff !important;
 }
 
 .block .block-container .action-button .linkToAbout:hover {
@@ -310,7 +312,7 @@
 .block {
   width: 100vw;
   max-width: 100%;
-  height: 54vh;
+  height: 38vh;
 }
 
 .block .block-container {
@@ -319,7 +321,11 @@
 
 .block .block-container .text-content {
   padding: 2.5rem 0;
-  margin: 2rem auto;
+  margin: 0.5rem auto;
+}
+
+.block .block-container .text-content h2 {
+  font-size: 3rem;
 }
 
 .footer-container {
@@ -358,34 +364,50 @@ body {
 
 #page-wrap {
   width: 100vw;
-  margin: 10vh auto;
+  margin: 6vh auto;
   padding: 0 12vw;
+  font-size: 1rem;
+}
+
+.links-in-column3 .link-box {
+  margin: 2rem auto;
+}
+
+.links-in-column3 span {
+  display: block;
+  word-spacing: 0em;
+  line-height: 1.4em;
+  text-transform: none;
+  font-weight: normal;
 }
 
 @media screen and (min-width: 1025px) {
-  .links-in-column3 a {
-    text-decoration: none !important;
-    cursor: pointer;
-    color: #6b6764 !important;
+  .links-in-column3 .link-box {
     display: inline-block;
     width: calc(80% / 3);
     border-right: 1px solid #d2d1d0;
   }
-  .links-in-column3 a:hover {
+  .links-in-column3 .link-box a {
+    text-decoration: none !important;
+    cursor: pointer;
+    color: #6b6764 !important;
+  }
+  .links-in-column3 .link-box a:hover {
     color: #6b6764;
   }
-  .links-in-column3 a:last-child {
+  .links-in-column3 .link-box a:last-child {
     border-right: 0;
   }
-  .links-in-column3 a span {
-    display: block;
-  }
-  .links-in-column3 a span .link-title {
-    font-weight: bold;
-  }
-  .links-in-column3 a span .link-subtitle {
-    font-size: 0.7rem;
-  }
+}
+
+.link-title {
+  font-size: 1.9rem;
+  letter-spacing: 0.2em;
+}
+
+.link-subtitle {
+  font-style: italic;
+  font-size: 1rem;
 }
 
 .text-block {
@@ -560,7 +582,8 @@ body {
 }
 
 .photo-size {
-  margin-bottom: 10rem;
+  margin-top: 10rem;
+  margin-bottom: 5rem;
 }
 
 .photo-size a {
@@ -615,7 +638,7 @@ body {
   padding: 1.25rem 3.125rem;
   background-color: #afafaf;
   border: 1px solid #f8f8f7;
-  color: #ffffff;
+  color: #ffffff !important;
 }
 
 .block .block-container .action-button .linkToAbout:hover {
@@ -741,7 +764,7 @@ body {
 .block {
   width: 100vw;
   max-width: 100%;
-  height: 54vh;
+  height: 38vh;
 }
 
 .block .block-container {
@@ -750,7 +773,11 @@ body {
 
 .block .block-container .text-content {
   padding: 2.5rem 0;
-  margin: 2rem auto;
+  margin: 0.5rem auto;
+}
+
+.block .block-container .text-content h2 {
+  font-size: 3rem;
 }
 
 .footer-container {
@@ -797,7 +824,8 @@ body {
 }
 
 .photo-size {
-  margin-bottom: 10rem;
+  margin-top: 10rem;
+  margin-bottom: 5rem;
 }
 
 .photo-size a {
@@ -852,7 +880,7 @@ body {
   padding: 1.25rem 3.125rem;
   background-color: #afafaf;
   border: 1px solid #f8f8f7;
-  color: #ffffff;
+  color: #ffffff !important;
 }
 
 .block .block-container .action-button .linkToAbout:hover {
