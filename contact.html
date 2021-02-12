@@ -22,7 +22,7 @@
 
 <body>
   <!-- START: header --------------------------------------------->
-  <div id="header" name="pageTop">
+  <div id="header-md" name="pageTop">
     <div class="container-fluid">
       <div class="row">
         <div class="col-md-3">
@@ -34,45 +34,45 @@
         </div>
         <div class="col-md-6">
           <div class="navbar-menu">
-            <ul class="navbar">
+            <ul class="navbar-md">
               <li class="navbar-item">
-                <a class="navbar-link" aria-current="page" href="index.html">Home</a>
+                <a aria-current="page" href="index.html">Home</a>
               </li>
               <li class="navbar-item">
-                <a class="navbar-link" href="about.html">About</a>
+                <a href="about.html">About</a>
               </li>
               <li class="navbar-item">
-                <a class="navbar-link" href="#">Resume</a>
+                <a href="#">Resume</a>
               </li>
               <li class="navbar-item">
-                <a class="navbar-link" href="portfolio.html">Portfolio</a>
+                <a href="portfolio.html">Portfolio</a>
               </li>
               <li class="navbar-item">
-                <a class="navbar-link" href="contact.html">Contact</a>
+                <a href="contact.html">Contact</a>
               </li>
             </ul>
           </div>
         </div>
         <div class="col-md-3">
           <div class="navbar-social">
-            <ul class="navbar">
-              <li class="navbar-item">
-                <a class="navbar-link" href="https://github.com/shiory602" target="_blank">
+            <ul class="navbar-md">
+              <li class="navbar-item-icon">
+                <a href="https://github.com/shiory602" target="_blank">
                   <i class="fab fa-github-alt"></i>
                 </a>
               </li>
-              <li class="navbar-item">
-                <a class="navbar-link" href="https://www.linkedin.com/in/shiori-suzuki-a819aa188/" target="_blank">
+              <li class="navbar-item-icon">
+                <a href="https://www.linkedin.com/in/shiori-suzuki-a819aa188/" target="_blank">
                   <i class="fab fa-linkedin"></i>
                 </a>
               </li>
-              <li class="navbar-item">
-                <a class="navbar-link" href="https://twitter.com/shiory602" target="_blank">
+              <li class="navbar-item-icon">
+                <a href="https://twitter.com/shiory602" target="_blank">
                   <i class="fab fa-twitter-square"></i>
                 </a>
               </li>
-              <li class="navbar-item">
-                <a class="navbar-link" href="mailto:suzushioufo@gmail.com" target="_blank">
+              <li class="navbar-item-icon">
+                <a href="mailto:suzushioufo@gmail.com" target="_blank">
                   <i class="fas fa-envelope-square"></i>
                 </a>
               </li>
@@ -83,11 +83,56 @@
     </div>
   </div>
   <!-- END: header --------------------------------------------->
-  <main class="contact-page">
-    <div class="container contact">
+  <!-- START: mobile hader ------------------------------>
+    <div class="collapse" id="navbarToggleExternalContent">
+      <div class="bg-light p-4">
+        <h5 class="text-gray h4">
+          <a aria-current="page" href="index.html">Home</a>
+        </h5>
+        <h5 class="text-gray h4">
+          <a href="about.html">About</a>
+        </h5>
+        <h5 class="text-gray h4">Resume</h5>
+        <h5 class="text-gray h4">
+          <a href="portfolio.html">Portfolio</a>
+        </h5>
+        <h5 class="text-gray h4">
+          <a href="contact.html">Contact</a>
+        </h5>
+        <span class="text-muted">
+          <a class="navbar-link" href="https://github.com/shiory602" target="_blank">
+            <i class="fab fa-github-alt"></i>
+          </a>
+        </span>
+        <span class="text-muted">
+          <a class="navbar-link" href="https://www.linkedin.com/in/shiori-suzuki-a819aa188/" target="_blank">
+            <i class="fab fa-linkedin"></i>
+          </a>
+        </span>
+        <span class="text-muted">
+          <a class="navbar-link" href="https://twitter.com/shiory602" target="_blank">
+            <i class="fab fa-twitter-square"></i>
+          </a>
+        </span>
+      </div>
+    </div>
+  </div>
+  </div>
+  <nav class="navbar navbar-light bg-light">
+    <div class="container-fluid">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+        data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false"
+        aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    </div>
+  </nav>
+  <!-- END: mobile hader -------------------------------->
+  <main id="page-wrap">
+    <div class="container">
       <div class="row">
         <div class="col-md-6 col-sm-12">
-          <img class="contact-image" src="/sources/contact.jpg" alt="contact photo">
+          <img class="image-design" src="/sources/contact.jpg" alt="contact photo">
         </div>
         <div class="col-md-6">
           <div class="contact-wrap">

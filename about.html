@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <link rel="shortcut icon" href="/img/favicon.ico">
   <title>About - Shiori Suzuki -</title>
@@ -18,9 +19,10 @@
   <!-- fontawesome --------------------------------------------------->
   <script src="https://kit.fontawesome.com/27c86a747a.js" crossorigin="anonymous"></script>
 </head>
+
 <body>
   <!-- START: header --------------------------------------------->
-  <div id="header" name="pageTop">
+  <div id="header-md" name="pageTop">
     <div class="container-fluid">
       <div class="row">
         <div class="col-md-3">
@@ -32,45 +34,45 @@
         </div>
         <div class="col-md-6">
           <div class="navbar-menu">
-            <ul class="navbar">
+            <ul class="navbar-md">
               <li class="navbar-item">
-                <a class="navbar-link" aria-current="page" href="index.html">Home</a>
+                <a aria-current="page" href="index.html">Home</a>
               </li>
               <li class="navbar-item">
-                <a class="navbar-link" href="about.html">About</a>
+                <a href="about.html">About</a>
               </li>
               <li class="navbar-item">
-                <a class="navbar-link" href="#">Resume</a>
+                <a href="#">Resume</a>
               </li>
               <li class="navbar-item">
-                <a class="navbar-link" href="portfolio.html">Portfolio</a>
+                <a href="portfolio.html">Portfolio</a>
               </li>
               <li class="navbar-item">
-                <a class="navbar-link" href="contact.html">Contact</a>
+                <a href="contact.html">Contact</a>
               </li>
             </ul>
           </div>
         </div>
         <div class="col-md-3">
           <div class="navbar-social">
-            <ul class="navbar">
-              <li class="navbar-item">
-                <a class="navbar-link" href="https://github.com/shiory602" target="_blank">
+            <ul class="navbar-md">
+              <li class="navbar-item-icon">
+                <a href="https://github.com/shiory602" target="_blank">
                   <i class="fab fa-github-alt"></i>
                 </a>
               </li>
-              <li class="navbar-item">
-                <a class="navbar-link" href="https://www.linkedin.com/in/shiori-suzuki-a819aa188/" target="_blank">
+              <li class="navbar-item-icon">
+                <a href="https://www.linkedin.com/in/shiori-suzuki-a819aa188/" target="_blank">
                   <i class="fab fa-linkedin"></i>
                 </a>
               </li>
-              <li class="navbar-item">
-                <a class="navbar-link" href="https://twitter.com/shiory602" target="_blank">
+              <li class="navbar-item-icon">
+                <a href="https://twitter.com/shiory602" target="_blank">
                   <i class="fab fa-twitter-square"></i>
                 </a>
               </li>
-              <li class="navbar-item">
-                <a class="navbar-link" href="mailto:suzushioufo@gmail.com" target="_blank">
+              <li class="navbar-item-icon">
+                <a href="mailto:suzushioufo@gmail.com" target="_blank">
                   <i class="fas fa-envelope-square"></i>
                 </a>
               </li>
@@ -81,87 +83,132 @@
     </div>
   </div>
   <!-- END: header --------------------------------------------->
-  <main>
-		<div class="about-page">
-			<div class="block">
-				<div class="block-container">
-					<div class="text-block">
-            <div class="text-block-wrap">
-              <div class="text-block-title">
-                <span>Contact Me</span>
-              </div>
-              <div class="text-block-content">
-                <p>Want to get in touch or follow me?</p>
-                <p>Feel free to connect with me on Instagram and Twitter.</p>
-                <p>If you’d like to reach out with a collaboration or business proposal,</p>
-                <p>you can email me at suzushioufo@gmail.com.</p>
-              </div>
+  <!-- START: mobile hader ------------------------------>
+  <div class="collapse" id="navbarToggleExternalContent">
+    <div class="bg-light p-4">
+      <h5 class="text-gray h4">
+        <a aria-current="page" href="index.html">Home</a>
+      </h5>
+      <h5 class="text-gray h4">
+        <a href="about.html">About</a>
+      </h5>
+      <h5 class="text-gray h4">Resume</h5>
+      <h5 class="text-gray h4">
+        <a href="portfolio.html">Portfolio</a>
+      </h5>
+      <h5 class="text-gray h4">
+        <a href="contact.html">Contact</a>
+      </h5>
+      <span class="text-muted">
+        <a class="navbar-link" href="https://github.com/shiory602" target="_blank">
+          <i class="fab fa-github-alt"></i>
+        </a>
+      </span>
+      <span class="text-muted">
+        <a class="navbar-link" href="https://www.linkedin.com/in/shiori-suzuki-a819aa188/" target="_blank">
+          <i class="fab fa-linkedin"></i>
+        </a>
+      </span>
+      <span class="text-muted">
+        <a class="navbar-link" href="https://twitter.com/shiory602" target="_blank">
+          <i class="fab fa-twitter-square"></i>
+        </a>
+      </span>
+    </div>
+  </div>
+  </div>
+  </div>
+  <nav class="navbar navbar-light bg-light">
+    <div class="container-fluid">
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+        data-bs-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false"
+        aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    </div>
+  </nav>
+  <!-- END: mobile hader -------------------------------->
+  <main id="page-wrap">
+    <div class="container-fluid">
+      <div class="row text-block">
+        <div class="col-md-6">
+          <div class="text-block-wrap">
+            <div class="text-block-title">
+              <span>Contact Me</span>
             </div>
-            <img class="about-image" src="/sources/shiori14.jpg" alt="Main portrait">
-					</div>
-				</div>
-			</div>
-		</div>
-
-
-  <div class="block">
-    <div class="block-container">
-      <div class="divider">
-        <div class="divider--line">
-          <hr>
+            <div class="text-block-content">
+              <p>Want to get in touch or follow me?</p>
+              <p>Feel free to connect with me on Instagram and Twitter.</p>
+              <p>If you’d like to reach out with a collaboration or business proposal,</p>
+              <p>you can email me at suzushioufo@gmail.com.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <img class="about-image" src="/sources/shiori14.jpg" alt="Main portrait">
         </div>
       </div>
     </div>
-  </div>
+    </div>
 
-  <div class="block">
-    <div class="block-container">
-      <div class="links-photo">
-        <div class="link-photo">
-          <a href="portfolio.html">
-            <span class="travelPhoto1 photo-set" aria-label="travel photo1"></span>
-            <span>Montreal</span>
-          </a>
-        </div>
-        <div class="link-photo">
-          <a href="portfolio.html">
-            <span class="travelPhoto2 photo-set" aria-label="travel photo2"></span>
-            <span>Nice</span>
-          </a>
-        </div>
-        <div class="link-photo">
-          <a href="portfolio.html">
-            <span class="travelPhoto3 photo-set" aria-label="travel photo3"></span>
-            <span>Paris</span>
-          </a>
+
+    <div class="block">
+      <div class="block-container">
+        <div class="divider">
+          <div class="divider--line">
+            <hr>
+          </div>
         </div>
       </div>
     </div>
-  </div>
+
+
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-4 photo-size">
+          <a href="portfolio.html">
+            <img src="/sources/ps4.jpg" alt="photo">
+            <span>Hawaii</span>
+          </a>
+        </div class="col-md-4">
+        <div class="col-md-4 photo-size">
+          <a href="portfolio.html">
+            <img src="/sources/ps5.jpg" alt="photo">
+            <span>Japan</span>
+          </a>
+        </div class="col-md-4">
+        <div class="col-md-4 photo-size">
+          <a href="portfolio.html">
+            <img src="/sources/ps6.jpg" alt="photo">
+            <span>Mexico</span>
+          </a>
+        </div class="col-md-4">
+      </div>
   </main>
 
-<footer>
+  <footer>
 
-  <div class="block">
-    <div class="block-container">
-      <div class="divider">
-        <div class="divider--line">
-          <hr>
+    <div class="block">
+      <div class="block-container">
+        <div class="divider">
+          <div class="divider--line">
+            <hr>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-  <div class="footer-email">
-    <a class="emailLink" href="mailto:suzushioufo@gmail.com" target="_blank">
-      <i class="fas fa-envelope-square"></i>
-    </a>
-  </div>
-  <div class="footer-container">  
-    <a href="#pageTop">
-      <i class="fas fa-arrow-up"></i>
-    </a>
-    <p>© Shiori Suzuki 2021</p>
-  </div>
-</footer>
+    <div class="footer-email">
+      <a class="emailLink" href="mailto:suzushioufo@gmail.com" target="_blank">
+        <i class="fas fa-envelope-square"></i>
+      </a>
+    </div>
+    <div class="footer-container">
+      <a href="#pageTop">
+        <i class="fas fa-arrow-up"></i>
+      </a>
+      <p>© Shiori Suzuki 2021</p>
+    </div>
+  </footer>
 </body>
+
 </html>

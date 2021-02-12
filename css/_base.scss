@@ -7,8 +7,8 @@
 }
 
 body {
-  width: 100%;
-  max-width: 100%;
+  width: 100vw;
+  max-width: 100;
   margin: 0 auto;
   padding: 0;
   text-align: center;
@@ -20,7 +20,7 @@ body {
 
 // index.html -------------------------------------------------
 #page-wrap {
-  width: 100%;
+  width: 100vw;
   margin: 10vh auto;
   padding: 0 12vw;
 }
@@ -34,186 +34,166 @@ body {
     display: inline-block;
     width: calc(80% / 3);
     border-right: 1px solid $mainColor3;
+
     &:last-child {
       border-right: 0;
     }
+
     span {
       display: block;
+
       .link-title {
         font-weight: bold;
       }
+
       .link-subtitle {
         font-size: 0.7rem;
       }
     }
   }
 }
+
 // --------------------------------------------
 // END: text menu devided ---------------------
-
-// START: links-photo ---------------------
-// --------------------------------------------
-.links-photo {
-  width: 100%;
-  height: 10vh;
-  display: block;
-  margin: 3rem auto;
-
-  margin-left: 2.8rem;
-
-  .link-photo a {
-    @include linkEffect;
-    width: calc(80% / 3);
-    float: left;
-    margin: 0 2rem;
-  }
-  .photo-set {
-    display: block;
-    width: 100%;
-    height: 48vh;
-    background-size: cover;
-    background-position: center center;
-    background-repeat: no-repeat;
-  }
-  }
-
-  .travelPhoto1 {
-    background-image: url('/sources/ps1.jpg');
-  }
-  .travelPhoto2 {
-    background-image: url('/sources/ps2.jpg');
-  }
-  .travelPhoto3 {
-    background-image: url('/sources/ps3.jpg');
-  }
-// --------------------------------------------
-// END: links-photo ---------------------------
-
 
 
 
 // About page ----------------------------
-
 .text-block {
-  width: 80vw;
-  display: inline-block;
-  margin: 3rem auto;
-  height: 70vh;
-  .about-image {
-    float: right;
-    display: block;
-    margin-right: 3rem;
-    height: 31rem;
-    background: $bgColor1;
-    padding: 2rem;
+  margin-bottom: 15vh;
+}
+
+.text-block-wrap {
+  margin: 5rem auto;
+  padding-top: 3rem;
+  color: $textColor2;
+  word-spacing: 0em;
+  line-height: 1.4em;
+  text-transform: none;
+  font-weight: normal;
+
+  @media screen and (max-width: 1025px) {
+    padding-top: 22rem;
   }
-  .text-block-wrap {
-    float: left;
-    width: 45%;
-    height: 31rem;
-    margin: 3rem;
-    color: $textColor2;
-    word-spacing: 0em;
-    line-height: 1.4em;
-    text-transform: none;
-    font-weight: normal;
-    .text-block-title {
-      @include textTitle;
+
+  .text-block-title {
+    @include textTitle;
+
+    @media screen and (max-width: 1025px) {
+      margin-bottom: 7rem;
     }
-    .text-block-content {
+  }
+
+  .text-block-content {
     font-size: 0.9375rem;
     letter-spacing: 0em;
   }
 }
+
+
+.about-image {
+  width: 80%;
+  background: $bgColor1;
+  padding: 2rem;
+
+  // margin-top: -20rem;
+  @media screen and (max-width: 1025px) {
+    width: 100%;
+    background: #f8f8f7;
+    padding: 2rem;
+    margin-top: -86rem;
+  }
 }
+
+
 
 
 // Portfolio page ----------------------------
-#portfolio-page {
-  width: 100%;
-  margin-bottom: 5rem;
-}
 
 .portfolio-title {
   @include textTitle;
-  margin-top: 5rem;
+  margin: 5rem auto;
 }
+
 .portfolio-works {
   width: 100%;
   margin: 0 auto;
+
   .row {
     margin-bottom: 2.5rem;
   }
+
   .portfolio-work {
     width: 80%;
     margin: 3rem auto;
-.resize {
-  width: 100%;
-}
+
+    .resize {
+      width: 100%;
+    }
   }
 }
 
 
 // contact form ----------------------------
+.image-design {
+  width: 85%;
+  margin-top: 4rem;
+}
 
-.contact {
-  width: 80vw;
-  display: inline-block;
-  margin: 0 auto;
-  height: 70vh;
-  .contact-image {
-    margin-top: 2rem;
-    padding-left: 5rem;
-    float: left;
-    display: block;
-    height: 31rem;
-  }
-  .contact-wrap {
-    height: 31rem;
-    padding-right: 5rem;
-    color: $textColor2;
-    word-spacing: 0em;
-    line-height: 1.4em;
-    text-transform: none;
-    font-weight: normal;
-    .contact-title {
-      font-size: 2.5rem;
-      letter-spacing: 0.2em;
-      margin-bottom: 1.5rem;
-      margin-top: 2.5rem;
+.contact-wrap {
+  color: $textColor2;
+  word-spacing: 0em;
+  line-height: 1.4em;
+  text-transform: none;
+  font-weight: normal;
+
+  .contact-title {
+    font-size: 2.5rem;
+    letter-spacing: 0.2em;
+    margin-bottom: 1.5rem;
+    margin-top: 2.5rem;
+
+    @media screen and (max-width: 1024px) {
+      line-height: normal;
     }
-    .contact-subtitle {
+  }
+
+  .contact-subtitle {
     font-size: 0.9375rem;
     letter-spacing: 0.2em;
-    }
-    .contact-form {
-      margin-top: 3rem;
-      padding: 0 2rem;
-      width: 100%;
-      textarea {
-        resize: none;
-      }
-      &:focus {
-        outline: none;
-      }
+  }
 
-      .form-field {
-        display: block;
-      }
-      .form-design {
-        height: 100%;
-        width: 90%;
-        padding: 1.25rem 1.5625rem;
-        margin-bottom: 0;
-        border: 0;
-        color: $mainColor3;
-        border-bottom: 1px solid $mainColor3 !important;
-        margin-bottom: .9375rem !important;
-        background-color: transparent;
-        font-size: 0.6rem;
-      }
+  .contact-form {
+    margin-top: 3rem;
+    padding: 0 2rem;
+    width: 100%;
+
+    textarea {
+      resize: none;
+    }
+
+    &:focus {
+      outline: none;
+    }
+
+    .form-field {
+      display: block;
+    }
+
+    .form-design {
+      height: 100%;
+      width: 90%;
+      padding: 1.25rem 1.5625rem;
+      border: 0;
+      color: $mainColor3;
+      border-bottom: 1px solid $mainColor3 !important;
+      margin: 2rem auto !important;
+      background-color: transparent;
+      font-size: 0.6rem;
+    }
+
+    .form-button {
+      margin-left: 2rem;
     }
   }
 }
-
-

@@ -10,43 +10,65 @@ $textColor1: #ffffff;
 $textColor2: #6b6764;
 $textColor3: #000000;
 
+
 @mixin textTitle {
-	font-size: 2.5rem;
-	letter-spacing: 0.2em;
-	margin-bottom: 3rem;
-	margin-top: 3rem;
-	color: $textColor2;
+  font-size: 2.5rem;
+  letter-spacing: 0.2em;
+  margin-bottom: 3rem;
+  margin-top: 3rem;
+  color: $textColor2;
 }
 
 @mixin linkEffect {
-	text-decoration: none;
-	cursor: pointer;
-	color: $textColor2;
-	&:hover {
-		color: $textColor2;
-	}
+  text-decoration: none !important;
+  cursor: pointer;
+  color: $textColor2 !important;
+
+  &:hover {
+    color: $textColor2;
+  }
 }
 
 .emailLink {
-	@include linkEffect;
+  @include linkEffect;
 }
 
 
 // devide line -----------------------------------------------------
 
 .divider {
-	display: inline-block;
-	padding-bottom: 2.5rem;
-	text-align: center;
-	width: 100%;
+  display: inline-block;
+  padding-bottom: 2.5rem;
+  text-align: center;
+  width: 100%;
 
-	.divider--line {
-		margin: 0 auto;
-		height: 1px;
-		width: 80%;
-		background-color: $mainColor3;
-	}
+  .divider--line {
+    margin: 0 auto;
+    height: 1px;
+    width: 80%;
+    background-color: $mainColor3;
+  }
 }
+
+
+// START: links-photo ---------------------
+// --------------------------------------------
+.photo-size {
+  margin-bottom: 10rem;
+
+  a {
+    @include linkEffect;
+
+    img {
+      width: 100%;
+    }
+  }
+}
+
+// --------------------------------------------
+// END: links-photo ---------------------------
+
+
 
 
 // index.html -----------------------------------------------------------------
@@ -56,63 +78,75 @@ $textColor3: #000000;
 
 // START: carousel ----------------------------
 // --------------------------------------------
-.slideshow {
-  height: 100vh;
-}
+
 
 #carouselExampleIndicators {
-	.carousel-inner {
-		height: 500px;
-		.carousel-item {
-			img{
-				position: relative;
-				&.slide1{
-					top: -100px;
-				}
-				&.slide2{
-					top: -200px;
-				}
-				&.slide3{
-					width: 100%;
-					// top: -180px;
-				}
-			}
+  width: 100%;
+
+  @media screen and (min-width: 1025px) {
+		.slideshow {
+			height: 100vh;
+			width: 100%;
 		}
-	}
+
+    .carousel-inner {
+      height: 500px;
+    }
+
+    .carousel-item {
+      img {
+        position: relative;
+
+        &.slide1 {
+          top: -100px;
+        }
+
+        &.slide2 {
+          top: -200px;
+        }
+
+        &.slide3 {
+          width: 100%;
+          top: -100px;
+        }
+      }
+    }
+  }
 }
 
 
 
 // button ------------------------------------------------------
 .block {
-	.block-container {
-		.action-button {
-			display: inline-block;
+  .block-container {
+    .action-button {
+      display: inline-block;
+
       .linkToAbout {
         @include linkEffect;
-				padding: 1.25rem 3.125rem;
+        padding: 1.25rem 3.125rem;
         background-color: $bgColor2;
         border: 1px solid $bgColor1;
-				color: $textColor1;
-				span {
-					display: inline-block;
-					width: 200px;
-					height: 200px;
-				}
+        color: $textColor1;
+
+        span {
+          display: inline-block;
+          width: 200px;
+          height: 200px;
+        }
       }
-		}
-	}
+    }
+  }
 }
 
 .form-button {
-	float: left;
-	background-color: $bgColor1;
-  color: $textColor2!important;
-	min-width: 8.4375rem;
-	padding: .75rem 1.25rem;
-	transition: opacity .8s;
-	transition-timing-function: cubic-bezier(0.25,0.46,0.45,0.94);
-	min-height: 2.34375rem;
-	cursor: pointer;
+  float: left;
+  background-color: $bgColor1;
+  color: $textColor2 !important;
+  min-width: 8.4375rem;
+  padding: .75rem 1.25rem;
+  transition: opacity .8s;
+  transition-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  min-height: 2.34375rem;
+  cursor: pointer;
 }
-

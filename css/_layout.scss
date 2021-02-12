@@ -9,23 +9,34 @@
 
 // START: header ------------------------------
 // --------------------------------------------
-//for mobile -----------------------
-#header-md {
-  display: none;
-}
-#navbarToggleExternalContent {
-  z-index: 99;
-}
 
-// for laptop ------------------------
-@media screen and (min-width: 600px) {
+// for laptop ------------------------------
 
   #header-md {
     display: contents;
   }
-  #header-sm {
-    display: none;
+  .navbar {
+    display: none!important;
   }
+
+  // START: for mobile -----------------------
+  @media screen and (max-width: 1024px) {
+    a {
+      @include linkEffect;
+    }
+    #header-md {
+      display: none!important;
+    }
+    .navbar {
+      display: flex!important;
+    }
+    .navbar-toggler-icon:active {
+      #page-wrap, footer {
+        display: none!important;
+      }
+    }
+  }
+  // END: for mobile -------------------------
 
   .header-container {
     display: flex;
@@ -51,23 +62,32 @@
 
   .navbar-social,
   .navbar-menu {
-    margin-top: 2rem;
-    padding: 0 5rem;
+    margin-top: 2.3rem;
+    padding: 0 1rem;
   }
 
-  .navbar {
+  .navbar-md {
     line-height: 100%;
 
     .navbar-item {
       list-style-type: none;
-      margin-right: 10px !important;
-
+      margin-right: 2rem !important;
+      display: inline;
       a {
         @include linkEffect;
+        margin: 1rem;
+      }
+    }
+    .navbar-item-icon {
+      list-style-type: none;
+      margin-right: 1rem !important;
+      display: inline;
+      a {
+        @include linkEffect;
+        margin: 1rem;
       }
     }
   }
-}
 // --------------------------------------------
 // END: header ------------------------------
 
@@ -77,9 +97,7 @@
 // --------------------------------------------
 .block {
   width: 100vw;
-  margin: auto;
-  // padding-left: 3rem;
-  // padding-right: 3rem;
+  // margin: auto;
   max-width: 100%;
   height: 54vh;
 

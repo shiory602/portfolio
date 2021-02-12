@@ -28,13 +28,13 @@ time, mark, audio, video {
 
 body {
  /* プロジェクトによって変動 */
- min-width: 1000px;
- color: #6b6764;
+ /* min-width: 1000px; */
+ color: #6b6764 !important;
  line-height: 1.5;
  font-weight: 400;
- font-family: 'Arapey', serif;
+ font-family: 'Arapey', serif !important;
 
- width: 100%;
+ width: 100vw;
  /* font-smoothing: antialiased; */
  font-variant-numeric: tabular-nums;
  /* safari hover対策 */

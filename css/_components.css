@@ -1,7 +1,7 @@
 .emailLink {
-  text-decoration: none;
+  text-decoration: none !important;
   cursor: pointer;
-  color: #6b6764;
+  color: #6b6764 !important;
 }
 
 .emailLink:hover {
@@ -22,28 +22,49 @@
   background-color: #d2d1d0;
 }
 
-.slideshow {
-  height: 100vh;
+.photo-size {
+  margin-bottom: 10rem;
 }
 
-#carouselExampleIndicators .carousel-inner {
-  height: 500px;
+.photo-size a {
+  text-decoration: none !important;
+  cursor: pointer;
+  color: #6b6764 !important;
 }
 
-#carouselExampleIndicators .carousel-inner .carousel-item img {
-  position: relative;
+.photo-size a:hover {
+  color: #6b6764;
 }
 
-#carouselExampleIndicators .carousel-inner .carousel-item img.slide1 {
-  top: -100px;
-}
-
-#carouselExampleIndicators .carousel-inner .carousel-item img.slide2 {
-  top: -200px;
-}
-
-#carouselExampleIndicators .carousel-inner .carousel-item img.slide3 {
+.photo-size a img {
   width: 100%;
+}
+
+#carouselExampleIndicators {
+  width: 100%;
+}
+
+@media screen and (min-width: 1025px) {
+  #carouselExampleIndicators .slideshow {
+    height: 100vh;
+    width: 100%;
+  }
+  #carouselExampleIndicators .carousel-inner {
+    height: 500px;
+  }
+  #carouselExampleIndicators .carousel-item img {
+    position: relative;
+  }
+  #carouselExampleIndicators .carousel-item img.slide1 {
+    top: -100px;
+  }
+  #carouselExampleIndicators .carousel-item img.slide2 {
+    top: -200px;
+  }
+  #carouselExampleIndicators .carousel-item img.slide3 {
+    width: 100%;
+    top: -100px;
+  }
 }
 
 .block .block-container .action-button {
@@ -51,9 +72,9 @@
 }
 
 .block .block-container .action-button .linkToAbout {
-  text-decoration: none;
+  text-decoration: none !important;
   cursor: pointer;
-  color: #6b6764;
+  color: #6b6764 !important;
   padding: 1.25rem 3.125rem;
   background-color: #afafaf;
   border: 1px solid #f8f8f7;
