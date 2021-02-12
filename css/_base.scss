@@ -29,25 +29,27 @@ body {
 // START: text menu devided --------------------
 // --------------------------------------------
 .links-in-column3 {
-  a {
-    @include linkEffect;
-    display: inline-block;
-    width: calc(80% / 3);
-    border-right: 1px solid $mainColor3;
-
-    &:last-child {
-      border-right: 0;
-    }
-
-    span {
-      display: block;
-
-      .link-title {
-        font-weight: bold;
+@media screen and (min-width: 1025px) {
+    a {
+      @include linkEffect;
+      display: inline-block;
+      width: calc(80% / 3);
+      border-right: 1px solid $mainColor3;
+  
+      &:last-child {
+        border-right: 0;
       }
-
-      .link-subtitle {
-        font-size: 0.7rem;
+  
+      span {
+        display: block;
+  
+        .link-title {
+          font-weight: bold;
+        }
+  
+        .link-subtitle {
+          font-size: 0.7rem;
+        }
       }
     }
   }
@@ -155,6 +157,7 @@ body {
 
     @media screen and (max-width: 1024px) {
       line-height: normal;
+      margin-top: 5.5rem;
     }
   }
 
