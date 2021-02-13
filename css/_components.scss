@@ -118,26 +118,24 @@ $textColor3: #000000;
 
 
 // button ------------------------------------------------------
-.block {
-  .block-container {
-    .action-button {
-      display: inline-block;
 
-      .linkToAbout {
-        @include linkEffect;
-        padding: 1.25rem 3.125rem;
-        background-color: $bgColor2;
-        border: 1px solid $bgColor1;
-        color: $textColor1!important;
+.action-button {
+	display: inline-block;
+	margin-top: 1rem;
 
-        span {
-          display: inline-block;
-          width: 200px;
-          height: 200px;
-        }
-      }
-    }
-  }
+	.linkToAbout {
+		@include linkEffect;
+		padding: 1.25rem 3.125rem;
+		background-color: $bgColor2;
+		border: 1px solid $bgColor1;
+		color: $textColor1!important;
+
+		span {
+			display: inline-block;
+			width: 200px;
+			height: 200px;
+		}
+	}
 }
 
 .form-button {

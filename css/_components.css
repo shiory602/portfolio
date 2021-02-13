@@ -68,11 +68,12 @@
   }
 }
 
-.block .block-container .action-button {
+.action-button {
   display: inline-block;
+  margin-top: 1rem;
 }
 
-.block .block-container .action-button .linkToAbout {
+.action-button .linkToAbout {
   text-decoration: none !important;
   cursor: pointer;
   color: #6b6764 !important;
@@ -82,11 +83,11 @@
   color: #ffffff !important;
 }
 
-.block .block-container .action-button .linkToAbout:hover {
+.action-button .linkToAbout:hover {
   color: #6b6764;
 }
 
-.block .block-container .action-button .linkToAbout span {
+.action-button .linkToAbout span {
   display: inline-block;
   width: 200px;
   height: 200px;

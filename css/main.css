@@ -69,11 +69,12 @@
   }
 }
 
-.block .block-container .action-button {
+.action-button {
   display: inline-block;
+  margin-top: 1rem;
 }
 
-.block .block-container .action-button .linkToAbout {
+.action-button .linkToAbout {
   text-decoration: none !important;
   cursor: pointer;
   color: #6b6764 !important;
@@ -83,11 +84,11 @@
   color: #ffffff !important;
 }
 
-.block .block-container .action-button .linkToAbout:hover {
+.action-button .linkToAbout:hover {
   color: #6b6764;
 }
 
-.block .block-container .action-button .linkToAbout span {
+.action-button .linkToAbout span {
   display: inline-block;
   width: 200px;
   height: 200px;
@@ -175,11 +176,12 @@
   }
 }
 
-.block .block-container .action-button {
+.action-button {
   display: inline-block;
+  margin-top: 1rem;
 }
 
-.block .block-container .action-button .linkToAbout {
+.action-button .linkToAbout {
   text-decoration: none !important;
   cursor: pointer;
   color: #6b6764 !important;
@@ -189,11 +191,11 @@
   color: #ffffff !important;
 }
 
-.block .block-container .action-button .linkToAbout:hover {
+.action-button .linkToAbout:hover {
   color: #6b6764;
 }
 
-.block .block-container .action-button .linkToAbout span {
+.action-button .linkToAbout span {
   display: inline-block;
   width: 200px;
   height: 200px;
@@ -415,7 +417,6 @@ body {
 }
 
 .text-block-wrap {
-  margin: 5rem auto;
   padding-top: 3rem;
   color: #6b6764;
   word-spacing: 0em;
@@ -449,6 +450,18 @@ body {
   letter-spacing: 0em;
 }
 
+@media screen and (max-width: 1025px) {
+  .text-block-wrap .text-block-content {
+    margin-top: -17px;
+    margin-bottom: 1rem;
+    font-size: 1.3rem;
+  }
+}
+
+.resume {
+  margin: 3rem auto;
+}
+
 .about-image {
   width: 80%;
   background: #f8f8f7;
@@ -460,7 +473,7 @@ body {
     width: 100%;
     background: #f8f8f7;
     padding: 2rem;
-    margin-top: -86rem;
+    margin-top: -92rem;
   }
 }
 
@@ -627,11 +640,12 @@ body {
   }
 }
 
-.block .block-container .action-button {
+.action-button {
   display: inline-block;
+  margin-top: 1rem;
 }
 
-.block .block-container .action-button .linkToAbout {
+.action-button .linkToAbout {
   text-decoration: none !important;
   cursor: pointer;
   color: #6b6764 !important;
@@ -641,11 +655,11 @@ body {
   color: #ffffff !important;
 }
 
-.block .block-container .action-button .linkToAbout:hover {
+.action-button .linkToAbout:hover {
   color: #6b6764;
 }
 
-.block .block-container .action-button .linkToAbout span {
+.action-button .linkToAbout span {
   display: inline-block;
   width: 200px;
   height: 200px;
@@ -869,11 +883,12 @@ body {
   }
 }
 
-.block .block-container .action-button {
+.action-button {
   display: inline-block;
+  margin-top: 1rem;
 }
 
-.block .block-container .action-button .linkToAbout {
+.action-button .linkToAbout {
   text-decoration: none !important;
   cursor: pointer;
   color: #6b6764 !important;
@@ -883,11 +898,11 @@ body {
   color: #ffffff !important;
 }
 
-.block .block-container .action-button .linkToAbout:hover {
+.action-button .linkToAbout:hover {
   color: #6b6764;
 }
 
-.block .block-container .action-button .linkToAbout span {
+.action-button .linkToAbout span {
   display: inline-block;
   width: 200px;
   height: 200px;
