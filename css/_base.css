@@ -447,6 +447,17 @@ body {
 .text-block-wrap .text-block-content {
   font-size: 0.9375rem;
   letter-spacing: 0em;
+  margin-bottom: 1rem;
+}
+
+.text-block-wrap .text-block-content a {
+  text-decoration: none !important;
+  cursor: pointer;
+  color: #6b6764 !important;
+}
+
+.text-block-wrap .text-block-content a:hover {
+  color: #6b6764;
 }
 
 @media screen and (max-width: 1025px) {
@@ -455,6 +466,10 @@ body {
     margin-bottom: 1rem;
     font-size: 1.3rem;
   }
+}
+
+.content-bottom {
+  margin-bottom: 15rem;
 }
 
 .resume {

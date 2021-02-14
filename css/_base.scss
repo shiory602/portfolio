@@ -99,6 +99,10 @@ body {
   .text-block-content {
     font-size: 0.9375rem;
     letter-spacing: 0em;
+    margin-bottom: 1rem;
+    a{
+      @include linkEffect;
+    }
 
     @media screen and (max-width: 1025px) {
       margin-top: -17px;
@@ -106,6 +110,9 @@ body {
       font-size: 1.3rem;
     }
   }
+}
+.content-bottom {
+  margin-bottom: 15rem;
 }
 
 .resume {
@@ -125,6 +132,8 @@ body {
     margin-top: -92rem;
   }
 }
+
+
 
 
 
