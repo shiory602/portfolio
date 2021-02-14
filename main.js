@@ -7,16 +7,16 @@ ScrollReveal().reveal('.reveal', {
   origin: "bottom",
   distance: "100px",
   opacity: 0,
+	reset: true,
 });
 
-ScrollReveal().reveal(".reveal1", { 
-	delay: 2500,
-  duration: 3500,
+ScrollReveal().reveal('.revealslower', { 
+	delay: 1500,
+  duration: 2000,
   origin: "bottom",
   distance: "100px",
   opacity: 0,
+	reset: true,
 });
-// ScrollReveal().reveal('.punchline', { delay: 2000 });
 
-ScrollReveal().reveal('.text-content');
 })
