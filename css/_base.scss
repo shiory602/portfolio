@@ -77,16 +77,16 @@ body {
 }
 
 .text-block-wrap {
-  padding-top: 3rem;
+  // padding-top: 3rem;
   color: $textColor2;
   word-spacing: 0em;
   line-height: 1.4em;
   text-transform: none;
   font-weight: normal;
 
-  @media screen and (max-width: 1025px) {
+  // @media screen and (max-width: 1025px) {
     // padding-top: 22rem;
-  }
+  // }
 
   .text-block-title {
     @include textTitle;
