@@ -425,12 +425,6 @@ body {
   font-weight: normal;
 }
 
-@media screen and (max-width: 1025px) {
-  .text-block-wrap {
-    padding-top: 22rem;
-  }
-}
-
 .text-block-wrap .text-block-title {
   font-size: 2.5rem;
   letter-spacing: 0.2em;
@@ -488,7 +482,6 @@ body {
     width: 100%;
     background: #f8f8f7;
     padding: 2rem;
-    margin-top: -92rem;
   }
 }
 
