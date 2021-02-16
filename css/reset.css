@@ -1,5 +1,5 @@
 /*
-html5doctor.com Reset Stylesheet
+html5doctor.com Reset Style sheet
 v1.6.1
 Last Updated: 2010-09-17
 Author: Richard Clark - http://richclarkdesign.com
@@ -24,15 +24,17 @@ time, mark, audio, video {
  outline:0;
  vertical-align:baseline;
  background:transparent;
+ font-size: 30px;
 }
 
 body {
  /* プロジェクトによって変動 */
  /* min-width: 1000pxs; */
- color: #6b6764 !important;
+ color: #C0B283 !important;
  line-height: 1.5;
  font-weight: 400;
- font-family: 'Arapey', serif !important;
+ font-size: 24px;
+ font-family: 'Suravaram', serif !important;
 
  width: 100vw;
  /* font-smoothing: antialiased; */

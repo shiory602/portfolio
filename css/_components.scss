@@ -1,21 +1,21 @@
 // color ----------------------------------------------
-$mainColor1: #ffffff;
-$mainColor2: #f9f9f9;
-$mainColor3: #d2d1d0;
+$mainColor1: #f4f4f4;
+$mainColor2: #d6c7b2;
 
 $bgColor1: #f8f8f7;
-$bgColor2: #afafaf;
+$bgColor2: #e2caab;
 
-$textColor1: #ffffff;
-$textColor2: #6b6764;
-$textColor3: #000000;
+$textColor1: #f4f4f4;
+$textColor2: #C0B283;
+$textColor3: #373737;
 
 
 @mixin textTitle {
-  font-size: 2.5rem;
-  letter-spacing: 0.2em;
-  margin-bottom: 3rem;
-  margin-top: 3rem;
+  font-size: 3.5rem;
+  letter-spacing: 0.1em;
+  margin-bottom: 1rem;
+  margin-top: 1.5rem;
+  font-weight: bold;
   color: $textColor2;
 }
 
@@ -34,7 +34,7 @@ $textColor3: #000000;
 }
 
 
-// START: devide line ----------------------------------------------
+// START: divide line ----------------------------------------------
 .divider {
   display: inline-block;
   padding-bottom: 2.5rem;
@@ -45,10 +45,10 @@ $textColor3: #000000;
     margin: 0 auto;
     height: 1px;
     width: 80%;
-    background-color: $mainColor3;
+    background-color: $mainColor2;
   }
 }
-// END: devide line ----------------------------------------------
+// END: divide line ----------------------------------------------
 
 
 // START: links-photo ---------------------
@@ -121,14 +121,17 @@ $textColor3: #000000;
 
 .action-button {
 	display: inline-block;
-	margin-top: 1rem;
+	margin-top: 2rem;
 
 	.linkToAbout {
 		@include linkEffect;
-		padding: 1.25rem 3.125rem;
+		padding: 0.5rem 1.2rem;
 		background-color: $bgColor2;
 		border: 1px solid $bgColor1;
+    border-radius: 10px;
+    box-shadow: 1px 1px 2px $textColor3;
 		color: $textColor1!important;
+    font-size: 0.8rem;
 
 		span {
 			display: inline-block;
@@ -142,10 +145,8 @@ $textColor3: #000000;
   float: left;
   background-color: $bgColor1;
   color: $textColor2 !important;
-  min-width: 8.4375rem;
-  padding: .75rem 1.25rem;
-  transition: opacity .8s;
-  transition-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
-  min-height: 2.34375rem;
+  min-width: 8rem;
+  padding: .5rem 1rem;
+  min-height: 2rem;
   cursor: pointer;
 }
