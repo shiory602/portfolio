@@ -2,11 +2,11 @@
 $mainColor1: #f4f4f4;
 $mainColor2: #d6c7b2;
 
-$bgColor1: #f8f8f7;
-$bgColor2: #e2caab;
+$bgColor1: #fff9e2;
+$bgColor2: #daae75;
 
 $textColor1: #f4f4f4;
-$textColor2: #C0B283;
+$textColor2: #96854e;
 $textColor3: #373737;
 
 
@@ -56,6 +56,9 @@ $textColor3: #373737;
 .photo-size {
   margin-top: 10rem;
   margin-bottom: 5rem;
+  &:hover {
+    opacity: 0.7;
+  }
 
   a {
     @include linkEffect;
@@ -127,11 +130,15 @@ $textColor3: #373737;
 		@include linkEffect;
 		padding: 0.5rem 1.2rem;
 		background-color: $bgColor2;
-		border: 1px solid $bgColor1;
+		// border: 1px solid $bgColor1;
     border-radius: 10px;
-    box-shadow: 1px 1px 2px $textColor3;
+    box-shadow: 0px 2px 2px $textColor3;
 		color: $textColor1!important;
     font-size: 0.8rem;
+    &:focus {
+      outline: none;
+      box-shadow: none;
+    }
 
 		span {
 			display: inline-block;
@@ -145,8 +152,13 @@ $textColor3: #373737;
   float: left;
   background-color: $bgColor1;
   color: $textColor2 !important;
-  min-width: 8rem;
-  padding: .5rem 1rem;
+  // min-width: 8rem;
+  padding: .5rem 2rem;
   min-height: 2rem;
   cursor: pointer;
+  box-shadow: 0px 2px 2px $textColor3;
+  &:focus {
+    outline: none;
+    box-shadow: none;
+  }
 }

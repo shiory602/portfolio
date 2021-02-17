@@ -1,11 +1,11 @@
 .emailLink {
   text-decoration: none !important;
   cursor: pointer;
-  color: #C0B283 !important;
+  color: #96854e !important;
 }
 
 .emailLink:hover {
-  color: #C0B283;
+  color: #96854e;
 }
 
 .divider {
@@ -27,14 +27,18 @@
   margin-bottom: 5rem;
 }
 
+.photo-size:hover {
+  opacity: 0.7;
+}
+
 .photo-size a {
   text-decoration: none !important;
   cursor: pointer;
-  color: #C0B283 !important;
+  color: #96854e !important;
 }
 
 .photo-size a:hover {
-  color: #C0B283;
+  color: #96854e;
 }
 
 .photo-size a img {
@@ -76,18 +80,23 @@
 .action-button .linkToAbout {
   text-decoration: none !important;
   cursor: pointer;
-  color: #C0B283 !important;
+  color: #96854e !important;
   padding: 0.5rem 1.2rem;
-  background-color: #e2caab;
-  border: 1px solid #f8f8f7;
+  background-color: #daae75;
+  border: 1px solid #fff9e2;
   border-radius: 10px;
-  box-shadow: 1px 1px 2px #373737;
+  box-shadow: 0px 2px 2px #373737;
   color: #f4f4f4 !important;
   font-size: 0.8rem;
 }
 
 .action-button .linkToAbout:hover {
-  color: #C0B283;
+  color: #96854e;
+}
+
+.action-button .linkToAbout:focus {
+  outline: none;
+  box-shadow: none;
 }
 
 .action-button .linkToAbout span {
@@ -98,14 +107,17 @@
 
 .form-button {
   float: left;
-  background-color: #f8f8f7;
-  color: #C0B283 !important;
-  min-width: 8.4375rem;
-  padding: .75rem 1.25rem;
-  transition: opacity .8s;
-  transition-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
-  min-height: 2.34375rem;
+  background-color: #fff9e2;
+  color: #96854e !important;
+  padding: .5rem 2rem;
+  min-height: 2rem;
   cursor: pointer;
+  box-shadow: 0px 2px 2px #373737;
+}
+
+.form-button:focus {
+  outline: none;
+  box-shadow: none;
 }
 
 .contact-page,
@@ -130,10 +142,10 @@
   a {
     text-decoration: none !important;
     cursor: pointer;
-    color: #C0B283 !important;
+    color: #96854e !important;
   }
   a:hover {
-    color: #C0B283;
+    color: #96854e;
   }
   #header-md {
     display: none !important;
@@ -180,11 +192,11 @@
 .navbar-md .navbar-item a {
   text-decoration: none !important;
   cursor: pointer;
-  color: #C0B283 !important;
+  color: #96854e !important;
 }
 
 .navbar-md .navbar-item a:hover {
-  color: #C0B283;
+  color: #96854e;
 }
 
 .navbar-md .navbar-item-icon {
@@ -195,13 +207,13 @@
 .navbar-md .navbar-item-icon a {
   text-decoration: none !important;
   cursor: pointer;
-  color: #C0B283 !important;
+  color: #96854e !important;
   margin-right: 1rem;
   font-size: 0.7rem;
 }
 
 .navbar-md .navbar-item-icon a:hover {
-  color: #C0B283;
+  color: #96854e;
 }
 
 .block {
@@ -215,7 +227,7 @@
 }
 
 .block .block-container .text-content {
-  padding: 2.5rem 0;
+  padding: 1.5rem 0;
   margin: 0 auto;
 }
 
@@ -235,11 +247,11 @@
 .footer-container a {
   text-decoration: none !important;
   cursor: pointer;
-  color: #C0B283 !important;
+  color: #96854e !important;
 }
 
 .footer-container a:hover {
-  color: #C0B283;
+  color: #96854e;
 }
 
 .footer-container p {

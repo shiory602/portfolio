@@ -28,7 +28,6 @@ body {
 }
 
 
-
 // START: text menu divided --------------------
 // --------------------------------------------
 .links-in-column3 {
@@ -42,16 +41,16 @@ body {
     text-transform: none;
     font-weight: normal;
   }
-@media screen and (min-width: 1025px) {
+  @media screen and (min-width: 1025px) {
     .link-box {
       display: inline-block;
       width: calc(80% / 3);
       border-right: 1px solid $mainColor2;
+      &:last-child {
+        border-right: 0;
+      }
       a{
         @include linkEffect;
-        &:last-child {
-          border-right: 0;
-        }
       }
     }
   }
@@ -78,7 +77,6 @@ body {
 }
 
 .text-block-wrap {
-  // padding-top: 3rem;
   color: $textColor2;
   word-spacing: 0em;
   line-height: 1.4em;
@@ -86,15 +84,11 @@ body {
   font-weight: normal;
   text-align: left;
 
-  // @media screen and (max-width: 1025px) {
-    // padding-top: 22rem;
-  // }
-
   .text-block-title {
     @include textTitle;
 
     @media screen and (max-width: 1025px) {
-      margin-bottom: 7rem;
+      margin-bottom: 4rem;
     }
   }
 
@@ -118,32 +112,48 @@ body {
     }
   }
 }
-.content-bottom {
-  margin-bottom: 15rem;
-}
 
 .resume {
-	margin: 3rem auto;
-  text-align: center;
+  margin: 1rem auto;
   p{
     margin-bottom: 0.5rem;
   }
 }
 
-
-.about-image {
-  width: 80%;
-  background: $bgColor1;
-  padding: 2rem;
-  margin-top: 2.4rem;
-
+@media screen and (min-width: 1024px) {
+  .image-bg {
+    height: 120%;
+    width: 100%;
+    clip-path: ellipse(80% 58% at 8% 7%);
+    background-color: $bgColor1;
+    position: absolute;
+    z-index: -1;}
+  }
+  
+  .about-image {
+    width: 60%;
+    margin-top: 2.4rem;
+    border-radius: 5px;
+    
   @media screen and (max-width: 1025px) {
     width: 100%;
-    background: #f8f8f7;
+    background-color: $bgColor1;
     padding: 1rem;
   }
 }
 
+.content-bottom {
+  margin-bottom: 15rem;
+  text-align: center;
+}
+.skill-bg {
+  height: 120%;
+  width: 100%;
+  clip-path: polygon(50% 0, 100% 50%, 50% 100%, 0 50%);
+  background-color: $bgColor1;
+  position: absolute;
+  z-index: -1;
+}
 
 
 
@@ -185,21 +195,9 @@ body {
 .contact-wrap {
   color: $textColor2;
   word-spacing: 0em;
-  // line-height: 1.4em;
   text-transform: none;
   font-weight: normal;
 
-  // .contact-title {
-  //   font-size: 2.5rem;
-  //   letter-spacing: 0.2em;
-  //   margin-bottom: 1.5rem;
-  //   margin-top: 2.5rem;
-
-  //   @media screen and (max-width: 1024px) {
-  //     line-height: normal;
-  //     margin-top: 5.5rem;
-  //   }
-  // }
 
   .contact-subtitle {
     font-size: 0.6rem;
@@ -207,27 +205,28 @@ body {
   }
 
   .contact-form {
-    // margin-top: 3rem;
     padding: 0 2rem;
     width: 100%;
-
+    
     textarea {
       resize: none;
     }
-
-    &:focus {
-      outline: none;
-    }
-
+    
     .form-field {
       display: block;
+      outline: none;
+      &:focus {
+        background-color: $bgColor2;
+        border-bottom: $textColor3;
+        color: $textColor1;
+      }
     }
 
     .form-design {
       height: 100%;
       width: 90%;
       border: 0;
-      color: $mainColor2;
+      color: $textColor2;
       border-bottom: 1px solid $mainColor2 !important;
       margin: 1.5rem auto !important;
       background-color: transparent;
