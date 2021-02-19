@@ -1,9 +1,8 @@
 $(document).ready(function(){
 	
-
 ScrollReveal().reveal('.reveal', { 
-	delay: 200,
-  duration: 2000,
+	delay: 100,
+  duration: 1700,
   origin: "bottom",
   distance: "100px",
   opacity: 0,
@@ -11,8 +10,8 @@ ScrollReveal().reveal('.reveal', {
 });
 
 ScrollReveal().reveal('.revealslower', { 
-	delay: 1500,
-  duration: 2000,
+	delay: 700,
+  duration: 1700,
   origin: "bottom",
   distance: "100px",
   opacity: 0,
@@ -20,3 +19,4 @@ ScrollReveal().reveal('.revealslower', {
 });
 
 })
+
