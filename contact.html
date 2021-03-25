@@ -162,7 +162,7 @@
               <input class="form-field form-design" type="text" placeholder="YOUR EMAIL" name="email">
               <textarea class="form-field form-design" placeholder="YOUR MESSAGE" name="message" cols="30"
                 rows="4"></textarea>
-              <button class="form-button" type="submit" name="button">Submit</button>
+              <button id="cannot_submit" class="form-button" type="submit" name="button">Submit</button>
             </form>
           </div>
         </div>
@@ -189,6 +189,13 @@
       <p> © 2021 Shiori Suzuki. All rights reserved.</p>
     </div>
   </footer>
+
+  <script>
+    document.getelementById("cannot_submit").addEventListener("click", (e) => {
+      e.preventDefault();
+      alert("Sorry, This form is currently not available.\nPlease send me e-mail.\nsuzushioufo@gmail.com");
+    })
+  </script>
 </body>
 
 </html>
