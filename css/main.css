@@ -124,6 +124,12 @@
           box-shadow: none;
 }
 
+.portfolio-link {
+  width: 400px !important;
+  margin: auto;
+  margin-bottom: 240px;
+}
+
 .emailLink {
   text-decoration: none !important;
   cursor: pointer;
@@ -247,6 +253,12 @@
   outline: none;
   -webkit-box-shadow: none;
           box-shadow: none;
+}
+
+.portfolio-link {
+  width: 400px !important;
+  margin: auto;
+  margin-bottom: 240px;
 }
 
 .contact-page,
@@ -779,6 +791,12 @@ a:hover {
           box-shadow: none;
 }
 
+.portfolio-link {
+  width: 400px !important;
+  margin: auto;
+  margin-bottom: 240px;
+}
+
 .contact-page,
 .about-page {
   margin-top: 5rem;
@@ -1045,5 +1063,11 @@ a:hover {
   outline: none;
   -webkit-box-shadow: none;
           box-shadow: none;
+}
+
+.portfolio-link {
+  width: 400px !important;
+  margin: auto;
+  margin-bottom: 240px;
 }
 /*# sourceMappingURL=main.css.map */

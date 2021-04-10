@@ -48,6 +48,7 @@ $textColor3: #373737;
     background-color: $mainColor2;
   }
 }
+
 // END: divide line ----------------------------------------------
 
 
@@ -56,6 +57,7 @@ $textColor3: #373737;
 .photo-size {
   margin-top: 10rem;
   margin-bottom: 5rem;
+
   &:hover {
     opacity: 0.7;
   }
@@ -88,10 +90,10 @@ $textColor3: #373737;
   width: 100%;
 
   @media screen and (min-width: 1025px) {
-		.slideshow {
-			height: 100vh;
-			width: 100%;
-		}
+    .slideshow {
+      height: 100vh;
+      width: 100%;
+    }
 
     .carousel-inner {
       height: 500px;
@@ -123,29 +125,30 @@ $textColor3: #373737;
 // button ------------------------------------------------------
 
 .action-button {
-	display: inline-block;
-	margin-top: 2rem;
+  display: inline-block;
+  margin-top: 2rem;
 
-	.linkToAbout {
-		@include linkEffect;
-		padding: 0.5rem 1.2rem;
-		background-color: $bgColor2;
-		// border: 1px solid $bgColor1;
+  .linkToAbout {
+    @include linkEffect;
+    padding: 0.5rem 1.2rem;
+    background-color: $bgColor2;
+    // border: 1px solid $bgColor1;
     border-radius: 10px;
     box-shadow: 0px 2px 2px $textColor3;
-		color: $textColor1!important;
+    color: $textColor1 !important;
     font-size: 0.8rem;
+
     &:focus {
       outline: none;
       box-shadow: none;
     }
 
-		span {
-			display: inline-block;
-			width: 200px;
-			height: 200px;
-		}
-	}
+    span {
+      display: inline-block;
+      width: 200px;
+      height: 200px;
+    }
+  }
 }
 
 .form-button {
@@ -157,8 +160,15 @@ $textColor3: #373737;
   min-height: 2rem;
   cursor: pointer;
   box-shadow: 0px 2px 2px $textColor3;
+
   &:focus {
     outline: none;
     box-shadow: none;
   }
+}
+
+.portfolio-link {
+  width: 400px !important;
+  margin: auto;
+  margin-bottom: 240px;
 }
