@@ -85,7 +85,8 @@
   padding: 0.5rem 1.2rem;
   background-color: #daae75;
   border-radius: 10px;
-  box-shadow: 0px 2px 2px #373737;
+  -webkit-box-shadow: 0px 2px 2px #373737;
+          box-shadow: 0px 2px 2px #373737;
   color: #f4f4f4 !important;
   font-size: 0.8rem;
 }
@@ -96,7 +97,8 @@
 
 .action-button .linkToAbout:focus {
   outline: none;
-  box-shadow: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
 
 .action-button .linkToAbout span {
@@ -112,12 +114,14 @@
   padding: .5rem 2rem;
   min-height: 2rem;
   cursor: pointer;
-  box-shadow: 0px 2px 2px #373737;
+  -webkit-box-shadow: 0px 2px 2px #373737;
+          box-shadow: 0px 2px 2px #373737;
 }
 
 .form-button:focus {
   outline: none;
-  box-shadow: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
 
 .emailLink {
@@ -206,7 +210,8 @@
   padding: 0.5rem 1.2rem;
   background-color: #daae75;
   border-radius: 10px;
-  box-shadow: 0px 2px 2px #373737;
+  -webkit-box-shadow: 0px 2px 2px #373737;
+          box-shadow: 0px 2px 2px #373737;
   color: #f4f4f4 !important;
   font-size: 0.8rem;
 }
@@ -217,7 +222,8 @@
 
 .action-button .linkToAbout:focus {
   outline: none;
-  box-shadow: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
 
 .action-button .linkToAbout span {
@@ -233,12 +239,14 @@
   padding: .5rem 2rem;
   min-height: 2rem;
   cursor: pointer;
-  box-shadow: 0px 2px 2px #373737;
+  -webkit-box-shadow: 0px 2px 2px #373737;
+          box-shadow: 0px 2px 2px #373737;
 }
 
 .form-button:focus {
   outline: none;
-  box-shadow: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
 
 .contact-page,
@@ -272,6 +280,8 @@
     display: none !important;
   }
   .navbar {
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
     display: flex !important;
   }
   .navbar-toggler-icon:active #page-wrap, .navbar-toggler-icon:active footer {
@@ -280,6 +290,8 @@
 }
 
 .header-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   width: 100%;
 }
@@ -292,6 +304,7 @@
 .logo-image a img {
   display: block;
   width: 100%;
+  -webkit-transition: opacity .8s;
   transition: opacity .8s;
 }
 
@@ -380,7 +393,8 @@
 }
 
 * {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 body {
@@ -516,7 +530,8 @@ body {
   .image-bg {
     height: 120%;
     width: 100%;
-    clip-path: ellipse(80% 58% at 8% 7%);
+    -webkit-clip-path: ellipse(80% 58% at 8% 7%);
+            clip-path: ellipse(80% 58% at 8% 7%);
     background-color: #fff9e2;
     position: absolute;
     z-index: -1;
@@ -545,7 +560,8 @@ body {
 .skill-bg {
   height: 120%;
   width: 100%;
-  clip-path: polygon(50% 0, 100% 50%, 50% 100%, 0 50%);
+  -webkit-clip-path: polygon(50% 0, 100% 50%, 50% 100%, 0 50%);
+          clip-path: polygon(50% 0, 100% 50%, 50% 100%, 0 50%);
   background-color: #fff9e2;
   position: absolute;
   z-index: -1;
@@ -559,12 +575,22 @@ body {
   font-weight: bold;
   color: #96854e;
   font-size: 30px;
-  margin: 0 auto;
+  margin: 90px auto;
+}
+
+a {
+  text-decoration: none !important;
+  cursor: pointer;
+  color: #96854e !important;
+}
+
+a:hover {
+  color: #96854e;
 }
 
 .portfolio-works {
   width: 100%;
-  margin: 0 auto;
+  margin: 10px auto;
 }
 
 .portfolio-works .row {
@@ -573,7 +599,7 @@ body {
 
 .portfolio-works .portfolio-work {
   width: 80%;
-  margin: 3rem auto;
+  margin: 0 auto;
 }
 
 .portfolio-works .portfolio-work .resize {
@@ -714,7 +740,8 @@ body {
   padding: 0.5rem 1.2rem;
   background-color: #daae75;
   border-radius: 10px;
-  box-shadow: 0px 2px 2px #373737;
+  -webkit-box-shadow: 0px 2px 2px #373737;
+          box-shadow: 0px 2px 2px #373737;
   color: #f4f4f4 !important;
   font-size: 0.8rem;
 }
@@ -725,7 +752,8 @@ body {
 
 .action-button .linkToAbout:focus {
   outline: none;
-  box-shadow: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
 
 .action-button .linkToAbout span {
@@ -741,12 +769,14 @@ body {
   padding: .5rem 2rem;
   min-height: 2rem;
   cursor: pointer;
-  box-shadow: 0px 2px 2px #373737;
+  -webkit-box-shadow: 0px 2px 2px #373737;
+          box-shadow: 0px 2px 2px #373737;
 }
 
 .form-button:focus {
   outline: none;
-  box-shadow: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
 
 .contact-page,
@@ -780,6 +810,8 @@ body {
     display: none !important;
   }
   .navbar {
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
     display: flex !important;
   }
   .navbar-toggler-icon:active #page-wrap, .navbar-toggler-icon:active footer {
@@ -788,6 +820,8 @@ body {
 }
 
 .header-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   width: 100%;
 }
@@ -800,6 +834,7 @@ body {
 .logo-image a img {
   display: block;
   width: 100%;
+  -webkit-transition: opacity .8s;
   transition: opacity .8s;
 }
 
@@ -973,7 +1008,8 @@ body {
   padding: 0.5rem 1.2rem;
   background-color: #daae75;
   border-radius: 10px;
-  box-shadow: 0px 2px 2px #373737;
+  -webkit-box-shadow: 0px 2px 2px #373737;
+          box-shadow: 0px 2px 2px #373737;
   color: #f4f4f4 !important;
   font-size: 0.8rem;
 }
@@ -984,7 +1020,8 @@ body {
 
 .action-button .linkToAbout:focus {
   outline: none;
-  box-shadow: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
 
 .action-button .linkToAbout span {
@@ -1000,11 +1037,13 @@ body {
   padding: .5rem 2rem;
   min-height: 2rem;
   cursor: pointer;
-  box-shadow: 0px 2px 2px #373737;
+  -webkit-box-shadow: 0px 2px 2px #373737;
+          box-shadow: 0px 2px 2px #373737;
 }
 
 .form-button:focus {
   outline: none;
-  box-shadow: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
 /*# sourceMappingURL=main.css.map */

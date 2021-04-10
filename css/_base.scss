@@ -22,6 +22,7 @@ body {
   width: 100vw;
   margin: 6vh auto;
   font-size: 1rem;
+
   @media screen and (min-width: 1024px) {
     padding: 0 12vw;
   }
@@ -34,6 +35,7 @@ body {
   .link-box {
     margin: 2rem auto;
   }
+
   span {
     display: block;
     word-spacing: 0em;
@@ -41,15 +43,18 @@ body {
     text-transform: none;
     font-weight: normal;
   }
+
   @media screen and (min-width: 1025px) {
     .link-box {
       display: inline-block;
       width: calc(80% / 3);
       border-right: 1px solid $mainColor2;
+
       &:last-child {
         border-right: 0;
       }
-      a{
+
+      a {
         @include linkEffect;
       }
     }
@@ -96,13 +101,15 @@ body {
     font-size: 0.8rem;
     letter-spacing: 0em;
     margin-bottom: 1rem;
-    a{
+
+    a {
       @include linkEffect;
     }
-    p{
+
+    p {
       margin-top: 0;
-    margin-bottom: 0.6rem;
-    line-height: 0.9;
+      margin-bottom: 0.6rem;
+      line-height: 0.9;
     }
 
     @media screen and (max-width: 1025px) {
@@ -115,7 +122,8 @@ body {
 
 .resume {
   margin: 1rem auto;
-  p{
+
+  p {
     margin-bottom: 0.5rem;
   }
 }
@@ -127,14 +135,15 @@ body {
     clip-path: ellipse(80% 58% at 8% 7%);
     background-color: $bgColor1;
     position: absolute;
-    z-index: -1;}
+    z-index: -1;
   }
-  
-  .about-image {
-    width: 60%;
-    margin-top: 2.4rem;
-    border-radius: 5px;
-    
+}
+
+.about-image {
+  width: 60%;
+  margin-top: 2.4rem;
+  border-radius: 5px;
+
   @media screen and (max-width: 1025px) {
     width: 100%;
     background-color: $bgColor1;
@@ -146,6 +155,7 @@ body {
   margin-bottom: 15rem;
   text-align: center;
 }
+
 .skill-bg {
   height: 120%;
   width: 100%;
@@ -164,12 +174,16 @@ body {
 .portfolio-title {
   @include textTitle;
   font-size: 30px;
-  margin: 0 auto;
+  margin: 90px auto;
+}
+
+a {
+  @include linkEffect;
 }
 
 .portfolio-works {
   width: 100%;
-  margin: 0 auto;
+  margin: 10px auto;
 
   .row {
     margin-bottom: 2.5rem;
@@ -177,7 +191,7 @@ body {
 
   .portfolio-work {
     width: 80%;
-    margin: 3rem auto;
+    margin: 0 auto;
 
     .resize {
       width: 100%;
@@ -207,14 +221,15 @@ body {
   .contact-form {
     padding: 0 2rem;
     width: 100%;
-    
+
     textarea {
       resize: none;
     }
-    
+
     .form-field {
       display: block;
       outline: none;
+
       &:focus {
         background-color: $bgColor2;
         border-bottom: $textColor3;
